@@ -7,6 +7,7 @@ from nav_msgs.msg import OccupancyGrid, Path
 from sensor_msgs.msg import LaserScan
 from visualization_msgs.msg import MarkerArray
 from geometry_msgs.msg import Pose, PoseStamped
+from nav_msgs.msg import Odometry
 
 from models.vq_vae import VQVAE
 from models.fused import FusedModel
@@ -30,6 +31,7 @@ class OpenLoopBag:
         # Subscribers
         self.scan_sub = rospy.Subscriber('/scan', LaserScan, self.laser_scan_callback)
         self.marker_sub = rospy.Subscriber('/marker', MarkerArray, self.marker_callback)
+        self.heading_to_goal_sub = rospy.Subscriber('/odom', Odometry, self.heading_to_goal_callback)
 
         # Publishers
         self.grid_map_pub = rospy.Publisher('/grid_map', OccupancyGrid, queue_size=10)
@@ -37,7 +39,14 @@ class OpenLoopBag:
         self.sampled_trajectory_pubs = [
             rospy.Publisher(f'/sampled_trajectory_{i+1}', Path, queue_size=10) for i in range(5)
         ]
-        self.marker_pub = rospy.Publisher('/visualization_marker', MarkerArray, queue_size=10)
+
+        self.dynamic_obstacles = np.zeros((5, 4, 10))
+        self.heading_to_goal = np.zeros(2)
+        self.max_obstacles = 10  # Maximum number of obstacles to track
+        self.num_timesteps = 5   # Number of timesteps for dynamic obstacles
+        self.data_format = (self.num_timesteps, 4, self.max_obstacles)
+        self.dynamic_obstacles = np.full(self.data_format, np.nan, dtype=np.float32)
+        self.previous_data = {}  # To store previous positions and timestamps
 
         # Timer for inference
         rospy.Timer(rospy.Duration(0.5), self.timer_callback)
@@ -88,7 +97,59 @@ class OpenLoopBag:
         
         This function can be extended to process dynamic obstacles.
         """
-        pass
+        current_timestamp = rospy.Time.now().to_sec()  # Get current time in seconds
+        obstacle_positions = []
+
+        # Extract positions from Marker message (assuming `msg.points` contains obstacle positions)
+        for marker in msg.markers[:self.max_obstacles]:  # Limit to max_obstacles
+            position = marker.pose.position
+            obstacle_positions.append([position.x, position.y])
+
+        # Convert positions to numpy array
+        obstacle_positions = np.array(obstacle_positions)
+
+        # Initialize velocity array
+        velocities = np.zeros_like(obstacle_positions)
+
+        # Calculate velocities based on previous data
+        for i, position in enumerate(obstacle_positions):
+            obstacle_id = i  # Use index as a simple ID (replace with actual ID if available)
+            if obstacle_id in self.previous_data:
+                prev_timestamp, prev_position = self.previous_data[obstacle_id]
+                dt = current_timestamp - prev_timestamp
+
+                if dt > 0:  # Avoid division by zero
+                    velocities[i] = (position - prev_position) / dt
+
+            # Update previous data with current position and timestamp
+            self.previous_data[obstacle_id] = (current_timestamp, position)
+
+        # Combine positions and velocities into a single array [x, y, vx, vy]
+        obstacle_data = np.hstack((obstacle_positions, velocities))
+
+        # Update dynamic_obstacles array with new data
+        obstacle_data_transposed = obstacle_data.T  # Shape: (4, num_obstacles)
+        self.dynamic_obstacles[:-1] = self.dynamic_obstacles[1:]  # Shift timesteps
+        padded_data = np.pad(obstacle_data_transposed,
+        ((0, 0), (0, max(0, self.max_obstacles - obstacle_data_transposed.shape[1]))),  # Pad if fewer obstacles
+        mode='constant',
+        constant_values=np.nan,
+        )
+        self.dynamic_obstacles[-1] = padded_data
+        rospy.loginfo("Dynamic Obstacle Processor Node Running...")
+
+        print("dynamic obstacle : ",self.dynamic_obstacles)
+
+    def heading_to_goal_callback(self, msg):
+        """
+        Callback for Odometry messages.
+        """
+        position_x = msg.pose.pose.position.x
+        position_y = msg.pose.pose.position.y
+
+        self.heading_to_goal = np.arctan2(position_y, position_x)  # Distance to goal (example placeholder)
+
+        # rospy.loginfo(f"Heading to Goal: {self.heading_to_goal}")
 
     def infer_trajectories(self,occupancy_grid,dynamic_obstacles,heading):
         """
@@ -153,13 +214,14 @@ class OpenLoopBag:
             path_msg.poses.append(pose)
 
         publisher.publish(path_msg)
+        rospy.loginfo(f"Published trajectory with {len(path_msg.poses)} points.")
 
     def timer_callback(self, event):
         """
         Timer callback to periodically infer trajectories.
         """
         if hasattr(self, 'occupancy_grid'):
-            self.infer_trajectories(self.occupancy_grid, torch.zeros([5, 4, 10]), torch.zeros([1]))
+            self.infer_trajectories(self.occupancy_grid, self.dynamic_obstacles, self.heading_to_goal)
         else:
             print("No Occupancy Grid. Cannot generate trajectory.")
 
