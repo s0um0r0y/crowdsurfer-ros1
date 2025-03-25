@@ -3,10 +3,13 @@
 import rospy
 import numpy as np
 import torch
+import math as m
+import tf2_ros
 from nav_msgs.msg import OccupancyGrid, Path
 from sensor_msgs.msg import LaserScan
 from visualization_msgs.msg import MarkerArray
 from geometry_msgs.msg import Pose, PoseStamped
+from nav_msgs.msg import Odometry
 
 from models.vq_vae import VQVAE
 from models.fused import FusedModel
@@ -30,18 +33,34 @@ class OpenLoopBag:
         # Subscribers
         self.scan_sub = rospy.Subscriber('/scan', LaserScan, self.laser_scan_callback)
         self.marker_sub = rospy.Subscriber('/marker', MarkerArray, self.marker_callback)
+        tf_buffer = tf2_ros.Buffer()
+        tf_listener = tf2_ros.TransformListener(tf_buffer)
 
         # Publishers
         self.grid_map_pub = rospy.Publisher('/grid_map', OccupancyGrid, queue_size=10)
         self.trajectory_pub = rospy.Publisher('/pred_trajectory', Path, queue_size=10)
-        self.sampled_trajectory_pubs = [
-            rospy.Publisher(f'/sampled_trajectory_{i+1}', Path, queue_size=10) for i in range(5)
-        ]
-        self.marker_pub = rospy.Publisher('/visualization_marker', MarkerArray, queue_size=10)
+        self.sampled_trajectory_publisher_1 = rospy.Publisher('/sampled_trajectory_1', Path)
+        self.sampled_trajectory_publisher_2 = rospy.Publisher('/sampled_trajectory_2', Path)
+        self.sampled_trajectory_publisher_3 = rospy.Publisher('/sampled_trajectory_3', Path)
+        self.sampled_trajectory_publisher_4 = rospy.Publisher('/sampled_trajectory_4', Path)
+        self.sampled_trajectory_publisher_5 = rospy.Publisher('/sampled_trajectory_5', Path)
+        self.sampled_trajectory_publishers = [self.sampled_trajectory_publisher_1, self.sampled_trajectory_publisher_2, self.sampled_trajectory_publisher_3, self.sampled_trajectory_publisher_4, self.sampled_trajectory_publisher_5]
+   
+        # self.dynamic_obstacles = np.zeros((5, 4, 10))
+        # self.heading_to_goal = np.zeros(2)
+        self.max_obstacles = 10  # Maximum number of obstacles to track
+        self.num_timesteps = 5   # Number of timesteps for dynamic obstacles
+        # self.data_format = (self.num_timesteps, 4, self.max_obstacles)
+        # self.dynamic_obstacles = np.full(self.data_format, np.nan, dtype=np.float32)
+        self.heading = np.zeros([1])
+        self.marker_positions = {}  # To store previous positions and timestamps
 
         # Timer for inference
-        rospy.Timer(rospy.Duration(0.5), self.timer_callback)
+        # rospy.Timer(rospy.Duration(0.5), self.timer_callback)
         # self.timer = self.create_timer(0.5, self.timer_callback)
+
+        while not rospy.is_shutdown():
+            self.infer_trajectories()
 
     def laser_scan_to_grid(self, scan, grid_size=60, resolution=0.1, max_range=30.0):
         """
@@ -83,25 +102,62 @@ class OpenLoopBag:
         self.grid_map_pub.publish(occupancy_grid_msg)
 
     def marker_callback(self, msg):
-        """
-        Callback for MarkerArray messages.
-        
-        This function can be extended to process dynamic obstacles.
-        """
-        pass
+        num_markers = len(msg.markers)
+        for i in range(num_markers):
+            marker = msg.markers[i]
+            time = marker.header.stamp
+            id = marker.id
+            x = marker.pose.position.x
+            y = marker.pose.position.y
 
-    def infer_trajectories(self,occupancy_grid,dynamic_obstacles,heading):
+            if str(id) in self.marker_positions.keys():
+                marker_data = self.marker_positions[str(id)]
+                prev_time = marker_data[-1][0]
+                prev_x = marker_data[-1][1]
+                prev_y = marker_data[-1][2]
+                delta_t = time - prev_time
+                delta_t = delta_t.secs + delta_t.nsecs * 1e-9
+                u = (x - prev_x) / delta_t
+                v = (y - prev_y) / delta_t
+                if len(marker_data) < 5:
+                    marker_data.append((time, x, y, u, v))
+                if len(marker_data) == 5:
+                    marker_data.pop(0)
+                    marker_data.append((time, x, y, u, v))
+            else:
+                self.marker_positions[str(id)] = [(time, x, y, None, None)]
+
+        distances = {}
+        for i in self.marker_positions.keys():
+            distances[i] = m.sqrt(self.marker_positions[i][-1][1] ** 2 + self.marker_positions[i][-1][2] ** 2)
+        distances = torch.tensor(list(distances.values()))
+        _, idx = torch.topk(distances, k=10, largest=False)
+        dynamic_obstacles = []
+        for i in idx:
+            dynamic_obstacles.append([data[1:] for data in self.marker_positions[str(i.item())]])
+        self.dynamic_obstacles = torch.tensor(dynamic_obstacles).permute(1,2,0)
+        return
+
+    def infer_trajectories(self):
         """
         Infer trajectories using VQVAE and PixelCNN models.
         """
         if not hasattr(self, 'occupancy_grid'):
             rospy.logwarn("No Occupancy Grid available for inference.")
             return
+        
+        if not hasattr(self, 'dynamic_obstacles'):
+            rospy.logwarn("No Dynamic available for inference.")
+            return
+        
+        if not hasattr(self, 'heading'):
+            rospy.logwarn("No heading available for inference.")
+            return
 
         # Prepare input tensors
-        occupancy_grid = torch.tensor(occupancy_grid).unsqueeze(0).unsqueeze(0).float().to(self.device)
-        dynamic_obstacles = dynamic_obstacles.unsqueeze(0).float().to(self.device)
-        heading = heading.unsqueeze(0).float().to(self.device)
+        occupancy_grid = torch.tensor(self.occupancy_grid).unsqueeze(0).unsqueeze(0).float().to(self.device)
+        dynamic_obstacles = torch.tensor(self.dynamic_obstacles).unsqueeze(0).float().to(self.device)
+        heading = torch.tensor(self.heading).unsqueeze(0).float().to(self.device)
 
         assert occupancy_grid.shape == (1, 1, 60, 60), f"Expected shape [1, 1, 60, 60], got {occupancy_grid.shape}"
         assert dynamic_obstacles.shape == (1, 5, 4, 10), f'Expected shape [1, 5, 4, 10] got {dynamic_obstacles.shape}'
@@ -119,7 +175,7 @@ class OpenLoopBag:
         pixelcnn_idx = torch.multinomial(torch.nn.functional.softmax(pixelcnn_embedding.squeeze().permute(1, 0)), 5).permute(1, 0)
         for i in range(5):
             pred_traj = self.vqvae.from_indices(pixelcnn_idx[i].unsqueeze(0)).view(2, 11)
-            self.publish_trajectory(pred_traj, self.sampled_trajectory_pubs[i])
+            self.publish_trajectory(pred_traj, self.sampled_trajectory_publishers[i])
         return
 
     def publish_trajectory(self, trajectory_coeffs, publisher):
@@ -153,15 +209,7 @@ class OpenLoopBag:
             path_msg.poses.append(pose)
 
         publisher.publish(path_msg)
-
-    def timer_callback(self, event):
-        """
-        Timer callback to periodically infer trajectories.
-        """
-        if hasattr(self, 'occupancy_grid'):
-            self.infer_trajectories(self.occupancy_grid, torch.zeros([5, 4, 10]), torch.zeros([1]))
-        else:
-            print("No Occupancy Grid. Cannot generate trajectory.")
+        # rospy.loginfo(f"Published trajectory with {len(path_msg.poses)} points.")
 
     def run(self):
         """

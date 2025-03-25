@@ -50,10 +50,8 @@ class RosInterfacePixelCNN:
 
         rospy.loginfo("Updated Occupancy Grid Map")
 
-        print("OGM : ",self.occupancy_grid)
+        # print("OGM : ",self.occupancy_grid)
     
-    
-
     def heading_to_goal_callback(self, msg):
         # Extract position and orientation from Odometry message
         position_x = msg.pose.pose.position.x
@@ -66,7 +64,7 @@ class RosInterfacePixelCNN:
 
         # Update heading-to-goal array
         self.heading_to_goal[0] = heading_angle  # Heading angle in radians
-        self.heading_to_goal[1] = np.linalg.norm([position_x, position_y])  # Distance to goal (example placeholder)
+        self.heading_to_goal[1] = np.linalg.norm(position_x, position_y)  # Distance to goal (example placeholder)
 
         rospy.loginfo(f"Heading to Goal: {self.heading_to_goal}")
         # print("dyanamic obstacle shape : ",self.heading_to_goal.shape)
@@ -113,7 +111,7 @@ class RosInterfacePixelCNN:
         self.dynamic_obstacles[-1] = padded_data
         rospy.loginfo("Dynamic Obstacle Processor Node Running...")
 
-        print("dyanamic obstacle : ",self.dynamic_obstacles)
+        # print("dyanamic obstacle : ",self.dynamic_obstacles)
 
     # def save_to_npy(self):
     #     np.save('occupancy_grid.npy', self.occupancy_grid)
