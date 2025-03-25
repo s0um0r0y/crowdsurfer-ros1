@@ -7,3 +7,4 @@ scripts
 *.txt
 data
 checkpoints
+rosbags
