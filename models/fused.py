@@ -14,6 +14,9 @@ class FusedModel(nn.Module):
 
     def forward(self, occupancy_grid, dynamic_obstacles, heading):
         embedding = self.observation_embedding(occupancy_grid, dynamic_obstacles, heading)
+
+        # embedding.unsqueeze(1): adds a dimension at position 1 → shape becomes (B, 1, 16)
+        # embedding.unsqueeze(-1): adds a dimension at the end → shape becomes (B, 16, 1)
         output = self.pixel_cnn(embedding.unsqueeze(1), embedding.unsqueeze(-1))
         return output
 
