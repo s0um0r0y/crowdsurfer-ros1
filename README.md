@@ -1,4 +1,4 @@
-# Implemention generative AI with sampling optimzer for path planning for a mobile robot
+# Implemention generative AI with sampling optimizer for path planning for a mobile robot
 
 - reimplemented with RVIZ visualiztion in closed loop with a rosbag
 - implemented generative AI for path planning using VQ-VAE and PixelCNN
