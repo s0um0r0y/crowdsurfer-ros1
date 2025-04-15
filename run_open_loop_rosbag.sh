@@ -12,7 +12,7 @@ tmux send-keys -t $SESSION_NAME:0.0 'roscore' C-m
 sleep 3
 
 tmux select-pane -t $SESSION_NAME:0.1
-tmux send-keys -t $SESSION_NAME:0.1 'rosbag play /rosbags/10.bag' C-m
+tmux send-keys -t $SESSION_NAME:0.1 'rosbag play /rosbags/testing_ICRA.bag' C-m
 
 tmux select-pane -t $SESSION_NAME:0.2
 tmux send-keys -t $SESSION_NAME:0.2 'rosrun rviz rviz -d /configs/config.rviz' C-m
