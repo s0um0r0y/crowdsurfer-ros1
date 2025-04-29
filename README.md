@@ -8,7 +8,14 @@
 
 # RVIZ window
 
-- blue colour is VQ-VAE + PixelCNN generated trajectory
-- green colour is PRIEST optimized trajectory
+- blue colour line is VQ-VAE + PixelCNN generated trajectory
+- green colour line is PRIEST optimized trajectory
+- green colour marker is the dynamic obstacles
   
 ![comparison_vqvae_pixelcnn_PRIEST_optimzer](https://github.com/user-attachments/assets/8896391a-1b49-4353-86b8-a23a5c3fdb22)
+
+# How to run ?
+```
+  conda env create -f environment.yml
+  ./run_open_loop_rosbag.sh
+```
