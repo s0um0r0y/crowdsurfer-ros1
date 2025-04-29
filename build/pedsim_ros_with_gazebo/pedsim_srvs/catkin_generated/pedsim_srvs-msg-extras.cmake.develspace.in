@@ -1,0 +1,2 @@
+set(pedsim_srvs_MESSAGE_FILES "")
+set(pedsim_srvs_SERVICE_FILES "/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_srvs/srv/SetAgentState.srv;/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_srvs/srv/GetAgentState.srv;/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_srvs/srv/SetAllAgentsState.srv;/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_srvs/srv/GetAllAgentsState.srv")

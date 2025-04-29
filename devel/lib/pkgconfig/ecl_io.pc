@@ -1,0 +1,8 @@
+prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+
+Name: ecl_io
+Description: Description of ecl_io
+Version: 0.61.6
+Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include
+Libs: -L${prefix}/lib -lecl_io
+Requires: 

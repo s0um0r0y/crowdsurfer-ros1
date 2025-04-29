@@ -1,0 +1,8 @@
+prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+
+Name: ecl_console
+Description: Description of ecl_console
+Version: 0.61.6
+Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_console/include
+Libs: -L${prefix}/lib 
+Requires: ecl_build ecl_config
