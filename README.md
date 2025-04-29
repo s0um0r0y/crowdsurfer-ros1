@@ -19,3 +19,17 @@
   conda env create -f environment.yml
   ./run_open_loop_rosbag.sh
 ```
+
+# Citation
+**Bibtex** -
+```
+@misc{kumar2025crowdsurfersamplingoptimizationaugmented,
+      title={CrowdSurfer: Sampling Optimization Augmented with Vector-Quantized Variational AutoEncoder for Dense Crowd Navigation}, 
+      author={Naman Kumar and Antareep Singha and Laksh Nanwani and Dhruv Potdar and Tarun R and Fatemeh Rastgar and Simon Idoko and Arun Kumar Singh and K. Madhava Krishna},
+      year={2025},
+      eprint={2409.16011},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2409.16011}, 
+}
+```
