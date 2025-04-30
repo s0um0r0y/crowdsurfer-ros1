@@ -107,6 +107,7 @@ all: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator/all
 all: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/all
 all: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/all
 all: turtlebot2_noetic_packages/kobuki/kobuki_keyop/all
+all: local-dynamic-navigation-pkg/all
 all: pedsim_ros_with_gazebo/3rdparty/libpedsim/all
 all: pedsim_ros_with_gazebo/ros_maps_to_pedsim/all
 all: pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs/all
@@ -201,6 +202,7 @@ preinstall: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator/p
 preinstall: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/preinstall
 preinstall: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/preinstall
 preinstall: turtlebot2_noetic_packages/kobuki/kobuki_keyop/preinstall
+preinstall: local-dynamic-navigation-pkg/preinstall
 preinstall: pedsim_ros_with_gazebo/3rdparty/libpedsim/preinstall
 preinstall: pedsim_ros_with_gazebo/ros_maps_to_pedsim/preinstall
 preinstall: pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs/preinstall
@@ -300,6 +302,7 @@ clean: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator/clean
 clean: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/clean
 clean: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/clean
 clean: turtlebot2_noetic_packages/kobuki/kobuki_keyop/clean
+clean: local-dynamic-navigation-pkg/clean
 clean: pedsim_ros_with_gazebo/3rdparty/libpedsim/clean
 clean: pedsim_ros_with_gazebo/ros_maps_to_pedsim/clean
 clean: pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs/clean
@@ -395,6 +398,24 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory local-dynamic-navigation-pkg
+
+# Recursive "all" directory target.
+local-dynamic-navigation-pkg/all:
+
+.PHONY : local-dynamic-navigation-pkg/all
+
+# Recursive "preinstall" directory target.
+local-dynamic-navigation-pkg/preinstall:
+
+.PHONY : local-dynamic-navigation-pkg/preinstall
+
+# Recursive "clean" directory target.
+local-dynamic-navigation-pkg/clean:
+
+.PHONY : local-dynamic-navigation-pkg/clean
 
 #=============================================================================
 # Directory level rules for directory pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs

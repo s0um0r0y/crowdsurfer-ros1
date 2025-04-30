@@ -26,7 +26,7 @@ export TURTLEBOT_TYPE='turtlebot'
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/soumoroy/Downloads/crowd_surfer-master/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH='/home/soumoroy/Downloads/crowd_surfer-master/devel/lib:/opt/ros/noetic/lib:/usr/local/cuda-12.4/lib64'
-export PATH='/opt/ros/noetic/bin:/usr/local/cuda-12.4/bin:/usr/bin:/home/soumoroy/anaconda3/bin:/home/soumoroy/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PATH='/home/soumoroy/Downloads/crowd_surfer-master/devel/bin:/opt/ros/noetic/bin:/usr/local/cuda-12.4/bin:/usr/bin:/home/soumoroy/anaconda3/bin:/home/soumoroy/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PKG_CONFIG_PATH="/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/soumoroy/Downloads/crowd_surfer-master/build'
 export PYTHONPATH="/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/python3/dist-packages:$PYTHONPATH"
