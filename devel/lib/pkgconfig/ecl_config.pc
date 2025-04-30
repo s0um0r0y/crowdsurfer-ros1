@@ -1,0 +1,8 @@
+prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+
+Name: ecl_config
+Description: Description of ecl_config
+Version: 0.61.6
+Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/include -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

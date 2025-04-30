@@ -1,0 +1,8 @@
+prefix=/home/soumoroy/Downloads/crowd_surfer-master/install
+
+Name: ros_maps_to_pedsim
+Description: Description of ros_maps_to_pedsim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

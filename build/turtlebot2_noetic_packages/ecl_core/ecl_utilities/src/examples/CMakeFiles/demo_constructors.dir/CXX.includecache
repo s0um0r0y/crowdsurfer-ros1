@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_core/ecl_utilities/src/examples/constructors.cpp
+iostream
+-
+

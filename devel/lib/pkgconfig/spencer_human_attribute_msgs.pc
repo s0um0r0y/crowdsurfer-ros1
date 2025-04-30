@@ -1,0 +1,8 @@
+prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+
+Name: spencer_human_attribute_msgs
+Description: Description of spencer_human_attribute_msgs
+Version: 1.0.8
+Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime
