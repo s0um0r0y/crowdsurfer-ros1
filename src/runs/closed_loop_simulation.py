@@ -64,8 +64,8 @@ class ClosedLoopSimulation():
     def update_odometry(self, odom):
         self.current_x = odom.pose.pose.position.x
         self.current_y = odom.pose.pose.position.y
-        self.current_vx = odom.pose.pose.position.vx
-        self.current_vy = odom.pose.pose.position.vy
+        self.current_vx = odom.twist.twist.linear.x
+        self.current_vy = odom.twist.twist.linear.y
 
     def laser_scan_to_grid(self, scan , grid_size = 60, resolution = 0.1, max_range = 30.0):
         self.static_obstacles = []

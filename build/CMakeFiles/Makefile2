@@ -107,7 +107,6 @@ all: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator/all
 all: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/all
 all: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/all
 all: turtlebot2_noetic_packages/kobuki/kobuki_keyop/all
-all: local-dynamic-navigation-pkg/all
 all: pedsim_ros_with_gazebo/3rdparty/libpedsim/all
 all: pedsim_ros_with_gazebo/ros_maps_to_pedsim/all
 all: pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs/all
@@ -116,6 +115,7 @@ all: turtlebot2_noetic_packages/kobuki/kobuki_auto_docking/all
 all: turtlebot2_noetic_packages/depthimage_to_laserscan/all
 all: turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/all
 all: pedsim_ros_with_gazebo/pedsim_msgs/all
+all: local-dynamic-navigation-pkg/all
 all: pedsim_ros_with_gazebo/pedsim_srvs/all
 all: pedsim_ros_with_gazebo/pedsim_utils/all
 all: pedsim_ros_with_gazebo/pedsim_visualizer/all
@@ -202,7 +202,6 @@ preinstall: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator/p
 preinstall: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/preinstall
 preinstall: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/preinstall
 preinstall: turtlebot2_noetic_packages/kobuki/kobuki_keyop/preinstall
-preinstall: local-dynamic-navigation-pkg/preinstall
 preinstall: pedsim_ros_with_gazebo/3rdparty/libpedsim/preinstall
 preinstall: pedsim_ros_with_gazebo/ros_maps_to_pedsim/preinstall
 preinstall: pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs/preinstall
@@ -211,6 +210,7 @@ preinstall: turtlebot2_noetic_packages/kobuki/kobuki_auto_docking/preinstall
 preinstall: turtlebot2_noetic_packages/depthimage_to_laserscan/preinstall
 preinstall: turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/preinstall
 preinstall: pedsim_ros_with_gazebo/pedsim_msgs/preinstall
+preinstall: local-dynamic-navigation-pkg/preinstall
 preinstall: pedsim_ros_with_gazebo/pedsim_srvs/preinstall
 preinstall: pedsim_ros_with_gazebo/pedsim_utils/preinstall
 preinstall: pedsim_ros_with_gazebo/pedsim_visualizer/preinstall
@@ -302,7 +302,6 @@ clean: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator/clean
 clean: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/clean
 clean: turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/clean
 clean: turtlebot2_noetic_packages/kobuki/kobuki_keyop/clean
-clean: local-dynamic-navigation-pkg/clean
 clean: pedsim_ros_with_gazebo/3rdparty/libpedsim/clean
 clean: pedsim_ros_with_gazebo/ros_maps_to_pedsim/clean
 clean: pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs/clean
@@ -311,6 +310,7 @@ clean: turtlebot2_noetic_packages/kobuki/kobuki_auto_docking/clean
 clean: turtlebot2_noetic_packages/depthimage_to_laserscan/clean
 clean: turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/clean
 clean: pedsim_ros_with_gazebo/pedsim_msgs/clean
+clean: local-dynamic-navigation-pkg/clean
 clean: pedsim_ros_with_gazebo/pedsim_srvs/clean
 clean: pedsim_ros_with_gazebo/pedsim_utils/clean
 clean: pedsim_ros_with_gazebo/pedsim_visualizer/clean
