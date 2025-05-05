@@ -30,7 +30,10 @@ class ClosedLoopSimulation():
         # subscriber 
         rospy.Subscriber('/scan', LaserScan, self.laser_scan_callback)
         rospy.Subscriber('/pedsim_visualizer/tracked_persons', TrackedPersons, self.marker_callback)
-        rospy.Subscriber('/crowsurfer_goal',PoseStamped, self.goal_callback)
+        self.goal_x = None
+        self.goal_y = None
+        # rospy.Subscriber('/move_base_simple/goal',PoseStamped, self.goal_callback)
+        rospy.Subscriber('/final_goal',PoseStamped, self.goal_callback)
         rospy.Subscriber('/odom', Odometry, self.update_odometry)
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
@@ -40,15 +43,15 @@ class ClosedLoopSimulation():
         self.dynamic_obstacles_publisher = rospy.Publisher('/dynamic_obs', MarkerArray)
         self.occupancy_grid_publisher = rospy.Publisher('/grid_map', OccupancyGrid)
         self.trajectory_publisher = rospy.Publisher('pred_trajectory', Path, 10)
-        self.sampled_trajectory_publisher_1 = rospy.Publisher('/sampled_trajectory_1', Path)
-        self.sampled_trajectory_publisher_2 = rospy.Publisher('/sampled_trajectory_2', Path)
-        self.sampled_trajectory_publisher_3 = rospy.Publisher('/sampled_trajectory_3', Path)
-        self.sampled_trajectory_publisher_4 = rospy.Publisher('/sampled_trajectory_4', Path)
-        self.sampled_trajectory_publisher_5 = rospy.Publisher('/sampled_trajectory_5', Path)
+        self.sampled_trajectory_publisher_1 = rospy.Publisher('/sampled_trajectory_1', Path,queue_size=10)
+        self.sampled_trajectory_publisher_2 = rospy.Publisher('/sampled_trajectory_2', Path,queue_size=10)
+        self.sampled_trajectory_publisher_3 = rospy.Publisher('/sampled_trajectory_3', Path,queue_size=10)
+        self.sampled_trajectory_publisher_4 = rospy.Publisher('/sampled_trajectory_4', Path,queue_size=10)
+        self.sampled_trajectory_publisher_5 = rospy.Publisher('/sampled_trajectory_5', Path,queue_size=10)
 
         self.optimized_trajectory_publisher = rospy.Publisher('/optimized_trajectory', Path)
 
-        self.cmd_vel_publisher = rospy.Publisher('/optimized_trajectory',Path)
+        self.cmd_vel_publisher = rospy.Publisher('/mobile_base/commands/velocity', Twist)
         self.sampled_trajectory_publishers = [self.sampled_trajectory_publisher_1,
                                               self.sampled_trajectory_publisher_2,
                                               self.sampled_trajectory_publisher_3,
@@ -76,13 +79,17 @@ class ClosedLoopSimulation():
 
         for r, theta in zip(scan.ranges, angles):
             if 0 < r < max_range:
-                x = int(center + (r * np.cos(theta)) / resolution)
-                y = int(center + (r * np.sin(theta)) / resolution)
-                if 0 <= x < grid_size and 0 <= grid_size:
-                    grid[y, x] = 100
-                    self.static_obstacles.append([r*np.cos(theta), r*np.sin(theta)])
+                x = int((r * np.cos(theta)) / resolution) + center
+                y = int((r * np.sin(theta)) / resolution) + center
 
-        self.static_obstacles = np.asarray(self.static_obstacles)
+                # Clamp coordinates to grid boundaries
+                x = np.clip(x, 0, grid_size-1)
+                y = np.clip(y, 0, grid_size-1)
+                
+                grid[y, x] = 100
+                self.static_obstacles.append([r*np.cos(theta), r*np.sin(theta)])
+
+        self.static_obstacles = np.asarray(self.static_obstacles, dtype=np.float32).reshape(-1, 2)
         N = self.static_obstacles.shape[0]
         self.static_obstacles = np.pad(self.static_obstacles,
                                        pad_width=((0, max(0, 100 - N)), (0, 0)),
@@ -98,16 +105,22 @@ class ClosedLoopSimulation():
         occupancy_grid.info.width = grid_size
         occupancy_grid.info.height = grid_size
         occupancy_grid.info.origin = Pose()
-        occupancy_grid.info.origin.x = -grid_size * resolution / 2
-        occupancy_grid.info.origin.y = -grid_size * resolution / 2
+        occupancy_grid.info.origin.position.x = -grid_size * resolution / 2
+        occupancy_grid.info.origin.position.y = -grid_size * resolution / 2
         occupancy_grid.data = grid.flatten().tolist()
 
         return occupancy_grid
     
     def laser_scan_callback(self, msg_data):
+
+        # # Check if goal is received before using it
+        # if self.goal_x is None:
+        #     rospy.logerr("Not received goal position x")
+
         self.time = msg_data.header.stamp
         occupancy_grid = self.laser_scan_to_grid(scan=msg_data, grid_size=60, resolution=0.1, max_range=msg_data.range_max)
-        self.occupancy_grid_publisher.publish(occupancy_grid)
+        if not rospy.is_shutdown():
+            self.occupancy_grid_publisher.publish(occupancy_grid)
 
     def marker_callback(self, msg_data):
 
@@ -132,9 +145,9 @@ class ClosedLoopSimulation():
                     marker_data.append((0, x, y, u, v))
 
             else:
-                self.marker_positions[str(id)] = [(0, x, y, None, None)]
+                self.marker_positions[str(id)] = [(0, x, y, 0.0, 0.0)]
 
-        # process stord marker data and get the marker closest to the robot
+        # process stored marker data and get the marker closest to the robot
         distances = {}
         for i in self.marker_positions.keys():
             distances[i] = m.sqrt(self.marker_positions[i][-1][1]**2 + self.marker_positions[i][-1][2]**2)
@@ -149,12 +162,16 @@ class ClosedLoopSimulation():
     def transform_base_link_to_map(self, position):
         base_link_position = PoseStamped()
         base_link_position.header.frame_id = "base_link"
-        base_link_position.header.stamp = rospy.TIme.now()
+        base_link_position.header.stamp = rospy.Time.now()
         base_link_position.pose.position.x = position[0]
         base_link_position.pose.position.y = position[1]
         base_link_position.pose.position.z = 0
 
-        transform = self.tf_buffer.lookup_transform("map", "base_link", rospy.TIme(0), rospy.Duration(1.0))
+        transform = self.tf_buffer.lookup_transform("map", 
+                                                    "base_link", 
+                                                    rospy.Time(0), 
+                                                    rospy.Duration(1.0))
+        
         map_position = do_transform_pose(base_link_position, transform)
         x = map_position.pose.position.x
         y = map_position.pose.position.y
@@ -259,7 +276,9 @@ class ClosedLoopSimulation():
         y_vqvae = np.asarray(y_vqvae)
 
         for i in range(5):
-            self.publish_trajectory(x_vqvae[i, :], y_vqvae[i, :], self.sampled_trajectory_publishers[i])
+            self.publish_trajectory(x_vqvae[i, :], 
+                                    y_vqvae[i, :], 
+                                    self.sampled_trajectory_publishers[i])
 
         self.publish_trajectory(x, y, self.optimized_trajectory_publisher)
 
@@ -334,6 +353,9 @@ class ClosedLoopSimulation():
         self.global_goal_msg = global_goal_msg
         self.update_local_goal()
         self.rollout_num = 0
+        self.goal_x = global_goal_msg.pose.position.x  
+        self.goal_y = global_goal_msg.pose.position.y
+        rospy.loginfo(f"Goal received: ({self.goal_x}, {self.goal_y})")
 
     def plan(self):
         if not self.goal_reached:
@@ -342,7 +364,7 @@ class ClosedLoopSimulation():
                 self.publish_zero_cmd_vel()
                 return
             if not hasattr(self, 'current_y'):
-                rospy.logerr("Not recievded current position y")
+                rospy.logerr("Not recieved current position y")
                 self.publish_zero_cmd_vel()
                 return
             if not hasattr(self, 'global_goal_x'):
@@ -362,8 +384,23 @@ class ClosedLoopSimulation():
         current_y = self.current_y
         self.update_local_goal()
 
-        state_initial = State(0, 0.1, self.current_vx, self.current_vy, 0, 0)
-        state_goal = State(self.local_goal_x, self.local_goal_y)
+        state_initial = State(0, 
+                              0.1, 
+                              self.current_vx, 
+                              self.current_vy, 
+                              0, 
+                              0, 
+                              0, 
+                              0)
+        
+        state_goal = State(self.local_goal_x, 
+                           self.local_goal_y,
+                           self.current_vx, 
+                           self.current_vy, 
+                           0, 
+                           0, 
+                           0, 
+                           0)
         rospy.loginfo(f"Global Position {current_x} {current_y}")
         rospy.loginfo(f"Global Goal {self.global_goal_x} {self.global_goal_y}")
         rospy.loginfo(f"Local Goal {self.local_goal_x} {self.local_goal_y}")

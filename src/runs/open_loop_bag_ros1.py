@@ -189,8 +189,6 @@ class OpenLoopBag:
         # Convert to OccupancyGrid message
         occupancy_grid_msg = OccupancyGrid()
         occupancy_grid_msg.header=scan.header
-        # occupancy_grid_msg.header.stamp = rospy.Time.now()
-        # occupancy_grid_msg.header.frame_id = "map"
         occupancy_grid_msg.info.resolution = resolution
         occupancy_grid_msg.info.width = grid_size
         occupancy_grid_msg.info.height = grid_size
