@@ -16,12 +16,12 @@ class State:
     def __init__(self, 
                  x, 
                  y, 
-                 vx, 
-                 vy, 
-                 ax, 
-                 ay, 
-                 normal_x, 
-                 normal_y):
+                 vx = None, 
+                 vy = None, 
+                 ax = None, 
+                 ay = None, 
+                 normal_x = None, 
+                 normal_y = None):
         
         # Position
         self.x = x
@@ -53,24 +53,6 @@ class Obstacles:
         self.num_obstacles = 40
         self.num_obstacles_projected = 10
 
-        self.static_obstacles_x = static_obstacles_x
-        self.static_obstacles_y = static_obstacles_y
-        self.dynamic_obstacles_x = dynamic_obstacles_x
-        self.dynamic_obstacles_y = dynamic_obstacles_y
-        self.dynamic_obstacles_vx = dynamic_obstacles_vx
-        self.dynamic_obstacles_vy = dynamic_obstacles_vy
-        self.time_horizon=10
-        self.num_steps=1000
-
-        static_obstacles_x = np.array(static_obstacles_x)
-        static_obstacles_y = np.array(static_obstacles_y)
-        dynamic_obstacles_x = np.array(dynamic_obstacles_x)
-        dynamic_obstacles_y = np.array(dynamic_obstacles_y)
-        dynamic_obstacles_vx = np.array(dynamic_obstacles_vx)
-        dynamic_obstacles_vy = np.array(dynamic_obstacles_vy)
-        # # If static_obstacles_x might be read-only, make a writeable copy
-        # if not static_obstacles_x.flags['WRITEABLE']:
-        #     static_obstacles_x = np.copy(static_obstacles_x)
         self.static_obstacles_x = torch.tensor(static_obstacles_x)
         self.static_obstacles_y = torch.tensor(static_obstacles_y)
 
@@ -87,7 +69,6 @@ class Obstacles:
         distances = jnp.sqrt(static_obstacles_x**2 + static_obstacles_y**2)
         sorted_indices = jnp.argsort(distances).flatten()
 
-        # might throw an error need to check
         self.obstacle_trajectory_x = self.obstacle_trajectory_x[sorted_indices[:self.num_obstacles],:]
         self.obstacle_trajectory_y = self.obstacle_trajectory_y[sorted_indices[:self.num_obstacles],:]
 
@@ -143,7 +124,11 @@ class Priest:
         self.scale_factor_warm[0] = 0.0
         self.scale_factor_warm[-1] = 0.0
 
-        self.P, self.Pdot, self.Pddot = generate_order_10_bernstein_coefficients(jnp.linspace(0, self.time_horizon, self.num_trajectory_steps), 0, self.time_horizon)
+        self.P, self.Pdot, self.Pddot = generate_order_10_bernstein_coefficients(jnp.linspace(0, 
+                                                                                              self.time_horizon, 
+                                                                                              self.num_trajectory_steps), 
+                                                                                              0, 
+                                                                                              self.time_horizon)
 
         self.A_obstacle = jnp.tile(self.P, (45, 1))
         self.A_projected = jnp.dot(self.Pddot, self.Pddot.T)
@@ -163,7 +148,13 @@ class Priest:
         if os.path.exists(log_dir):
             shutil.rmtree(log_dir)
 
-    def get_intermediate_position(self, split, x_waypoints, y_waypoints, x_diff, y_diff, cumulative_segment_lengths):
+    def get_intermediate_position(self, 
+                                  split, 
+                                  x_waypoints, 
+                                  y_waypoints, 
+                                  x_diff, 
+                                  y_diff, 
+                                  cumulative_segment_lengths):
         
         # distance travelled in time horizon
         distance = self.velocity_desired * self.time_horizon * split
@@ -264,7 +255,6 @@ class Priest:
         c_x_warm_2 = jax.vmap(jnp.matmul)(C_inverse, rhs_x)[:, :11]
         c_y_warm_2 = jax.vmap(jnp.matmul)(C_inverse, rhs_y)[:, :11]
 
-        # what is this? 
         x_warm2 = jax.vmap(jnp.dot, in_axes=(0, None))(c_x_warm_2, self.P)
         y_warm2 = jax.vmap(jnp.dot, in_axes=(0, None))(c_y_warm_2, self.P)
 
@@ -285,7 +275,7 @@ class Priest:
         c_x_warm_2 = c_x_warm_2[idx_elite_trajectories[:self.num_warm_trajectories_2], :]
         c_y_warm_2 = c_y_warm_2[idx_elite_trajectories[:self.num_warm_trajectories_2], :]
 
-        # ??
+        # take some warm1 and some elite warm2 trajectories
         c_x_warm_2 = jnp.vstack((c_x_warm1, c_x_warm_2))
         c_y_warm_2 = jnp.vstack((c_y_warm1, c_y_warm_2))
 
@@ -473,7 +463,6 @@ class Priest:
 
         dist = jnp.hstack((dist_obs_dynamic, dist_obs_static))
         
-        # clearance ?
         clearance = -jnp.min(dist, axis=1).sum(-1)
         obstacle = jnp.linalg.nomr(jnp.maximum(0, dist), axis = 1).sum(-1)
         smoothness = jnp.sqrt(xddot**2 + yddot**2).sum(-1)
