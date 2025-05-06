@@ -149,7 +149,7 @@ class Planner():
         dynamic_obstacles_x_t = obstacles.dynamic_obstacles_x[:, None] + obstacles.dynamic_obstacles_x[:, None] * torch.linspace(0, -0.5, 5)
         dynamic_obstacles_y_t = obstacles.dynamic_obstacles_y[:, None] + obstacles.dynamic_obstacles_y[:, None] * torch.linspace(0, -0.5, 5)
         dynamic_obstacles_vx_t = obstacles.dynamic_obstacles_vx.unsqueeze(1).expand_as(dynamic_obstacles_x_t)
-        dynamic_obstacles_vy_t = obstacles.dynamic_obstacles_vx.unsqueeze(1).expand_as(dynamic_obstacles_y_t)
+        dynamic_obstacles_vy_t = obstacles.dynamic_obstacles_vy.unsqueeze(1).expand_as(dynamic_obstacles_y_t)
         dynamic_obstacles = torch.stack((dynamic_obstacles_x_t,
                                          dynamic_obstacles_y_t,
                                          dynamic_obstacles_vx_t,
