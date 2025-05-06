@@ -14,10 +14,20 @@
   
 ![comparison_vqvae_pixelcnn_PRIEST_optimzer](https://github.com/user-attachments/assets/8896391a-1b49-4353-86b8-a23a5c3fdb22)
 
+# Pedsim Gazebo simulator
+
+- Validated results in a crowded environment simulation to avoid humans
+
+![teaser](./gazebo_simulation.png)
+
 # How to run ?
 ```
+  # this command is for running open loop using a rosbag
   conda env create -f environment.yml
   ./run_open_loop_rosbag.sh
+
+  # this command is for running closed loop in pedsim gazebo simulation
+  ./run_closed_loop_simulation.sh
 ```
 
 # Citation
