@@ -303,4 +303,4 @@ if __name__ == "__main__":
 
     planner = Planner()
     # planner.generate_trajectory(occupancy_grid, state_current, state_goal, obstacles)
-    planner.generate_trajectory(occupancy_grid, state_current, obstacles)
+    planner.generate_trajectory(occupancy_grid, state_current, obstacles, state_goal, obstacles)
