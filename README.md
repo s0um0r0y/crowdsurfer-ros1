@@ -4,7 +4,10 @@
 - implemented generative AI for path planning for mobile robot in a crowded environment using VQ-VAE and PixelCNN
 
 ![teaser](./sampling_from_vqvae.png)
+flowchart made by [Naman Kumar](https://github.com/namanxkumar)
+
 ![teaser](./PixelCNN.png)
+flowchart made by [Soumo Roy](https://github.com/s0um0r0y)
 
 ## Built With
 - Pedsim Gazebo Simulation
@@ -38,7 +41,7 @@
 
 ## Author
 - [Soumo Roy](https://github.com/s0um0r0y) - soumoroy09@gmail.com
-- Aadith Warrier (for guidance)
+- [Aadith Warrier](https://github.com/aadith-warrier) (for guidance)
 
 ## Future Work
 - Docker setup for running with ease
@@ -60,3 +63,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
       url={https://arxiv.org/abs/2409.16011}, 
 }
 ```
+
+## Remark 
+
+This work is a remimplemtation of [Crowdsurfer paper](https://github.com/Smart-Wheelchair-RRC/CrowdSurfer) which was published at IEEE ICRA 2025 (A* star conference for robotics) at IIIT hyderabad under the guidance of [Naman Kumar](https://github.com/namanxkumar) and [Dr. Madhava Krishna](https://robotics.iiit.ac.in/faculty_mkrishna/.)
