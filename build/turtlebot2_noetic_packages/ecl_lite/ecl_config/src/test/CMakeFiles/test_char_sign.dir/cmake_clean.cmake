@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_config/test_char_sign"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_config/test_char_sign.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_config/test_char_sign"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_config/test_char_sign.pdb"
   "CMakeFiles/test_char_sign.dir/char_sign.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_polynomials"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_polynomials.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_polynomials"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_polynomials.pdb"
   "CMakeFiles/ecl_test_polynomials.dir/polynomials.cpp.o"
 )
 

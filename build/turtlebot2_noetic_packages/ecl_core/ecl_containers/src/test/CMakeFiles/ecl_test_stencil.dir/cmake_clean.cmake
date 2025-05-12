@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_containers/ecl_test_stencil"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_containers/ecl_test_stencil.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_containers/ecl_test_stencil"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_containers/ecl_test_stencil.pdb"
   "CMakeFiles/ecl_test_stencil.dir/stencil.cpp.o"
 )
 

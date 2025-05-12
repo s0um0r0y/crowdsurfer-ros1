@@ -208,9 +208,12 @@ struct Printer< ::turtlebot_calibration::ScanAngle_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_calibration::ScanAngle_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "scan_angle: ";
     Printer<double>::stream(s, indent + "  ", v.scan_angle);
   }

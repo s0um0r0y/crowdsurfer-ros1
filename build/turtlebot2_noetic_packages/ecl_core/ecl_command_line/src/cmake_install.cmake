@@ -1,8 +1,8 @@
-# Install script for directory: /home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_core/ecl_command_line/src
+# Install script for directory: /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_core/ecl_command_line/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/Downloads/crowd_surfer-master/install")
+  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/ecl_core/ecl_command_line/src/examples/cmake_install.cmake")
-  include("/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/ecl_core/ecl_command_line/src/test/cmake_install.cmake")
+  include("/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/ecl_core/ecl_command_line/src/examples/cmake_install.cmake")
+  include("/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/ecl_core/ecl_command_line/src/test/cmake_install.cmake")
 
 endif()
 

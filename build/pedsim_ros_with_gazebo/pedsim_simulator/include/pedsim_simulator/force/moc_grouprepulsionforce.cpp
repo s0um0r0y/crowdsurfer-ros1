@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'grouprepulsionforce.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'grouprepulsionforce.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -46,7 +46,7 @@ QT_MOC_LITERAL(3, 56, 7) // "valueIn"
 static const uint qt_meta_data_GroupRepulsionForce[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -68,7 +68,7 @@ static const uint qt_meta_data_GroupRepulsionForce[] = {
 void GroupRepulsionForce::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<GroupRepulsionForce *>(_o);
+        GroupRepulsionForce *_t = static_cast<GroupRepulsionForce *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->onForceFactorGroupRepulsionChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
@@ -77,14 +77,10 @@ void GroupRepulsionForce::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject GroupRepulsionForce::staticMetaObject = { {
-    &Force::staticMetaObject,
-    qt_meta_stringdata_GroupRepulsionForce.data,
-    qt_meta_data_GroupRepulsionForce,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject GroupRepulsionForce::staticMetaObject = {
+    { &Force::staticMetaObject, qt_meta_stringdata_GroupRepulsionForce.data,
+      qt_meta_data_GroupRepulsionForce,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *GroupRepulsionForce::metaObject() const

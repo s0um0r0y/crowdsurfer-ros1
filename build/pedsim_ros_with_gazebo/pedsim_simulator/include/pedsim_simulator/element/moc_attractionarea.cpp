@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'attractionarea.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'attractionarea.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -52,7 +52,7 @@ QT_MOC_LITERAL(9, 77, 8) // "strength"
 static const uint qt_meta_data_AttractionArea[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -78,7 +78,7 @@ static const uint qt_meta_data_AttractionArea[] = {
 void AttractionArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<AttractionArea *>(_o);
+        AttractionArea *_t = static_cast<AttractionArea *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->positionChanged((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
@@ -89,21 +89,21 @@ void AttractionArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (AttractionArea::*)(double , double );
+            typedef void (AttractionArea::*_t)(double , double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AttractionArea::positionChanged)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (AttractionArea::*)(double , double );
+            typedef void (AttractionArea::*_t)(double , double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AttractionArea::sizeChanged)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (AttractionArea::*)(double );
+            typedef void (AttractionArea::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AttractionArea::strengthChanged)) {
                 *result = 2;
                 return;
@@ -112,14 +112,10 @@ void AttractionArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject AttractionArea::staticMetaObject = { {
-    &ScenarioElement::staticMetaObject,
-    qt_meta_stringdata_AttractionArea.data,
-    qt_meta_data_AttractionArea,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject AttractionArea::staticMetaObject = {
+    { &ScenarioElement::staticMetaObject, qt_meta_stringdata_AttractionArea.data,
+      qt_meta_data_AttractionArea,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *AttractionArea::metaObject() const

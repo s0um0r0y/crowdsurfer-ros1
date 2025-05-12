@@ -1,4 +1,4 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: kobuki_description
 Description: Description of kobuki_description

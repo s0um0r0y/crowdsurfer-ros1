@@ -1,8 +1,8 @@
-# Install script for directory: /home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/src/examples
+# Install script for directory: /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/src/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/Downloads/crowd_surfer-master/install")
+  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_sockets"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ecl_io" TYPE EXECUTABLE FILES "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_io/ecl_demo_sockets")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ecl_io" TYPE EXECUTABLE FILES "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_io/ecl_demo_sockets")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_sockets" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_sockets")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_sockets"
-         OLD_RPATH "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib:"
+         OLD_RPATH "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_sockets")
@@ -64,12 +64,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_socketpair"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ecl_io" TYPE EXECUTABLE FILES "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_io/ecl_demo_socketpair")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ecl_io" TYPE EXECUTABLE FILES "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_io/ecl_demo_socketpair")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_socketpair" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_socketpair")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_socketpair"
-         OLD_RPATH "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib:"
+         OLD_RPATH "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_socketpair")
@@ -84,12 +84,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_poll"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ecl_io" TYPE EXECUTABLE FILES "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_io/ecl_demo_poll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ecl_io" TYPE EXECUTABLE FILES "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_io/ecl_demo_poll")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_poll" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_poll")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_poll"
-         OLD_RPATH "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib:"
+         OLD_RPATH "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ecl_io/ecl_demo_poll")

@@ -270,12 +270,20 @@ struct Printer< ::pedsim_msgs::SocialRelation_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::SocialRelation_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "type: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.type);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "strength: ";
     Printer<float>::stream(s, indent + "  ", v.strength);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "track1_id: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.track1_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "track2_id: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.track2_id);
   }

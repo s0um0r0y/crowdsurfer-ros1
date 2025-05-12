@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_statistics.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_statistics.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_statistics.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_statistics.so"
   "CMakeFiles/ecl_statistics.dir/covariance_ellipsoid.cpp.o"
 )
 

@@ -220,10 +220,13 @@ struct Printer< ::spencer_vision_msgs::PersonROI_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_vision_msgs::PersonROI_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "detection_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.detection_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "roi: ";
-    s << std::endl;
     Printer< ::sensor_msgs::RegionOfInterest_<ContainerAllocator> >::stream(s, indent + "  ", v.roi);
   }
 };

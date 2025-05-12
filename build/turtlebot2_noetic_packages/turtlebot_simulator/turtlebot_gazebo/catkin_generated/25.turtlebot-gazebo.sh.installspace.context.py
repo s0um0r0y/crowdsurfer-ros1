@@ -2,7 +2,7 @@
 DEVELSPACE = False
 INSTALLSPACE = True
 
-CATKIN_DEVEL_PREFIX = '/home/soumoroy/Downloads/crowd_surfer-master/devel'
+CATKIN_DEVEL_PREFIX = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel'
 
 CATKIN_GLOBAL_BIN_DESTINATION = 'bin'
 CATKIN_GLOBAL_ETC_DESTINATION = 'etc'
@@ -20,14 +20,14 @@ CATKIN_PACKAGE_LIBEXEC_DESTINATION = 'lib/turtlebot_gazebo'
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python3/dist-packages/turtlebot_gazebo'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/turtlebot_gazebo'
 
-CMAKE_BINARY_DIR = '/home/soumoroy/Downloads/crowd_surfer-master/build'
-CMAKE_CURRENT_BINARY_DIR = '/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
-CMAKE_CURRENT_SOURCE_DIR = '/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
-CMAKE_INSTALL_PREFIX = '/home/soumoroy/Downloads/crowd_surfer-master/install'
-CMAKE_SOURCE_DIR = '/home/soumoroy/Downloads/crowd_surfer-master/src'
+CMAKE_BINARY_DIR = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build'
+CMAKE_CURRENT_BINARY_DIR = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
+CMAKE_CURRENT_SOURCE_DIR = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
+CMAKE_INSTALL_PREFIX = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install'
+CMAKE_SOURCE_DIR = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src'
 
 PROJECT_NAME = 'turtlebot_gazebo'
-PROJECT_BINARY_DIR = '/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
-PROJECT_SOURCE_DIR = '/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
+PROJECT_BINARY_DIR = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
+PROJECT_SOURCE_DIR = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo'
 
 PYTHON_EXECUTABLE = '/usr/bin/python3'

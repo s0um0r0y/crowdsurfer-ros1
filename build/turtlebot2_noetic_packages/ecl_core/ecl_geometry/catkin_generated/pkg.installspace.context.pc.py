@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "ecl_build;ecl_config;ecl_type_traits;ecl_containers;ecl_formatters;ecl_linear_algebra;ecl_exceptions;ecl_math;ecl_mpl".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lecl_geometry".split(';') if "-lecl_geometry" != "" else []
 PROJECT_NAME = "ecl_geometry"
-PROJECT_SPACE_DIR = "/home/soumoroy/Downloads/crowd_surfer-master/install"
+PROJECT_SPACE_DIR = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install"
 PROJECT_VERSION = "0.62.3"

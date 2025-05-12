@@ -241,8 +241,8 @@ struct Definition< ::spencer_tracking_msgs::TrackedPersons_<ContainerAllocator> 
 "================================================================================\n"
 "MSG: geometry_msgs/Twist\n"
 "# This expresses velocity in free space broken into its linear and angular parts.\n"
-"Vector3  linear\n"
-"Vector3  angular\n"
+"Vector3 linear\n"
+"Vector3 angular\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Vector3\n"
@@ -294,17 +294,25 @@ struct Printer< ::spencer_tracking_msgs::TrackedPersons_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::TrackedPersons_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "tracks[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "tracks: ";
+    if (v.tracks.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.tracks.size(); ++i)
     {
-      s << indent << "  tracks[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_tracking_msgs::TrackedPerson_<ContainerAllocator> >::stream(s, indent + "    ", v.tracks[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_tracking_msgs::TrackedPerson_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.tracks[i]);
     }
+    if (v.tracks.empty() || false)
+      s << "]";
   }
 };
 

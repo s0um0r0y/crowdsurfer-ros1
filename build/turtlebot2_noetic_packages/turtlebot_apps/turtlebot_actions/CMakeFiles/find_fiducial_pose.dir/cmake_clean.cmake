@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_actions/find_fiducial_pose"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_actions/find_fiducial_pose.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_actions/find_fiducial_pose"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_actions/find_fiducial_pose.pdb"
   "CMakeFiles/find_fiducial_pose.dir/src/detect_calibration_pattern.cpp.o"
   "CMakeFiles/find_fiducial_pose.dir/src/find_fiducial_pose.cpp.o"
 )

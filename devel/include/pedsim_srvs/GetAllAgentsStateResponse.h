@@ -220,8 +220,8 @@ struct Definition< ::pedsim_srvs::GetAllAgentsStateResponse_<ContainerAllocator>
 "================================================================================\n"
 "MSG: geometry_msgs/Twist\n"
 "# This expresses velocity in free space broken into its linear and angular parts.\n"
-"Vector3  linear\n"
-"Vector3  angular\n"
+"Vector3 linear\n"
+"Vector3 angular\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Vector3\n"
@@ -288,8 +288,9 @@ struct Printer< ::pedsim_srvs::GetAllAgentsStateResponse_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_srvs::GetAllAgentsStateResponse_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "agent_states: ";
-    s << std::endl;
     Printer< ::pedsim_msgs::AgentStates_<ContainerAllocator> >::stream(s, indent + "  ", v.agent_states);
   }
 };

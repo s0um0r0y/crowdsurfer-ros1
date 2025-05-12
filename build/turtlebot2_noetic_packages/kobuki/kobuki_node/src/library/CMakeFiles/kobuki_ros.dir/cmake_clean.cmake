@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libkobuki_ros.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libkobuki_ros.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libkobuki_ros.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libkobuki_ros.so"
   "CMakeFiles/kobuki_ros.dir/diagnostics.cpp.o"
   "CMakeFiles/kobuki_ros.dir/kobuki_ros.cpp.o"
   "CMakeFiles/kobuki_ros.dir/odometry.cpp.o"

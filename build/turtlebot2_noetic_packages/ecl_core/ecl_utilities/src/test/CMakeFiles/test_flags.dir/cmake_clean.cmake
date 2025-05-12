@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/test_flags"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/test_flags.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/test_flags"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/test_flags.pdb"
   "CMakeFiles/test_flags.dir/flags.cpp.o"
 )
 

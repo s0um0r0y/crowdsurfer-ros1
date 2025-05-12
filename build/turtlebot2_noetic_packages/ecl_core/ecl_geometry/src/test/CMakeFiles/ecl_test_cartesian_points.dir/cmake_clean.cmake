@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_cartesian_points"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_cartesian_points.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_cartesian_points"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_cartesian_points.pdb"
   "CMakeFiles/ecl_test_cartesian_points.dir/cartesian_points.cpp.o"
 )
 

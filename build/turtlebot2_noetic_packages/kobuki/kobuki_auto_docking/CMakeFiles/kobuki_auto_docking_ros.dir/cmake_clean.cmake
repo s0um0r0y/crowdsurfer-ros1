@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libkobuki_auto_docking_ros.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libkobuki_auto_docking_ros.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libkobuki_auto_docking_ros.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libkobuki_auto_docking_ros.so"
   "CMakeFiles/kobuki_auto_docking_ros.dir/src/auto_docking_ros.cpp.o"
 )
 

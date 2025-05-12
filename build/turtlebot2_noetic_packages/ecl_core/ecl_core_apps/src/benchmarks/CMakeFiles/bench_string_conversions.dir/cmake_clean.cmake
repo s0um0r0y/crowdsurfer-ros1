@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_core_apps/bench_string_conversions"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_core_apps/bench_string_conversions.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_core_apps/bench_string_conversions"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_core_apps/bench_string_conversions.pdb"
   "CMakeFiles/bench_string_conversions.dir/string_conversions.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_linear_algebra.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_linear_algebra.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_linear_algebra.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_linear_algebra.so"
   "CMakeFiles/ecl_linear_algebra.dir/sophus_helpers.cpp.o"
   "CMakeFiles/ecl_linear_algebra.dir/sophus_interpolators.cpp.o"
 )

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libyocs_cmd_vel_mux_nodelet.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libyocs_cmd_vel_mux_nodelet.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libyocs_cmd_vel_mux_nodelet.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libyocs_cmd_vel_mux_nodelet.so"
   "CMakeFiles/yocs_cmd_vel_mux_nodelet.dir/src/cmd_vel_mux_nodelet.cpp.o"
   "CMakeFiles/yocs_cmd_vel_mux_nodelet.dir/src/cmd_vel_subscribers.cpp.o"
 )

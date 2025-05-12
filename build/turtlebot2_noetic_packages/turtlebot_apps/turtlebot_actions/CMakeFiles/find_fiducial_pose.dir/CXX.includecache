@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialAction.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ turtlebot_actions/FindFiducialActionResult.h
 turtlebot_actions/FindFiducialActionFeedback.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialActionFeedback.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 turtlebot_actions/FindFiducialFeedback.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialActionGoal.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 turtlebot_actions/FindFiducialGoal.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialActionResult.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 turtlebot_actions/FindFiducialResult.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialFeedback.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialFeedback.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialGoal.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_actions/FindFiducialResult.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_actions/FindFiducialResult.h
 string
 -
 vector
@@ -144,7 +144,7 @@ ros/message_operations.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/include/turtlebot_actions/detect_calibration_pattern.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/include/turtlebot_actions/detect_calibration_pattern.h
 opencv2/core/core.hpp
 -
 opencv2/calib3d/calib3d.hpp
@@ -166,11 +166,7 @@ iostream
 stdexcept
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/detect_calibration_pattern.cpp
-turtlebot_actions/detect_calibration_pattern.h
--
-
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/find_fiducial_pose.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/find_fiducial_pose.cpp
 ros/ros.h
 -
 actionlib/server/simple_action_server.h
@@ -196,9 +192,9 @@ tf/tf.h
 tf/transform_broadcaster.h
 -
 turtlebot_actions/FindFiducialAction.h
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/turtlebot_actions/FindFiducialAction.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/turtlebot_actions/FindFiducialAction.h
 turtlebot_actions/detect_calibration_pattern.h
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/turtlebot_actions/detect_calibration_pattern.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/src/turtlebot_actions/detect_calibration_pattern.h
 
 /opt/ros/noetic/include/actionlib/action_definition.h
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin.pdb"
   "CMakeFiles/ecl_test_linear_algebra_plugin.dir/plugin.cpp.o"
 )
 

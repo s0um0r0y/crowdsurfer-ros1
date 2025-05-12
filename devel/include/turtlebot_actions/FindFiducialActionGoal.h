@@ -248,14 +248,17 @@ struct Printer< ::turtlebot_actions::FindFiducialActionGoal_<ContainerAllocator>
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_actions::FindFiducialActionGoal_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "goal_id: ";
-    s << std::endl;
     Printer< ::actionlib_msgs::GoalID_<ContainerAllocator> >::stream(s, indent + "  ", v.goal_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "goal: ";
-    s << std::endl;
     Printer< ::turtlebot_actions::FindFiducialGoal_<ContainerAllocator> >::stream(s, indent + "  ", v.goal);
   }
 };

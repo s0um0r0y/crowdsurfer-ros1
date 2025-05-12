@@ -242,13 +242,20 @@ struct Printer< ::pedsim_msgs::Waypoint_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::Waypoint_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "name: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.name);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "behavior: ";
     Printer<int8_t>::stream(s, indent + "  ", v.behavior);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "position: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.position);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "radius: ";
     Printer<float>::stream(s, indent + "  ", v.radius);
   }

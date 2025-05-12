@@ -222,8 +222,8 @@ struct Definition< ::pedsim_msgs::AgentStates_<ContainerAllocator> >
 "================================================================================\n"
 "MSG: geometry_msgs/Twist\n"
 "# This expresses velocity in free space broken into its linear and angular parts.\n"
-"Vector3  linear\n"
-"Vector3  angular\n"
+"Vector3 linear\n"
+"Vector3 angular\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Vector3\n"
@@ -291,17 +291,25 @@ struct Printer< ::pedsim_msgs::AgentStates_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::AgentStates_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "agent_states[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "agent_states: ";
+    if (v.agent_states.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.agent_states.size(); ++i)
     {
-      s << indent << "  agent_states[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::pedsim_msgs::AgentState_<ContainerAllocator> >::stream(s, indent + "    ", v.agent_states[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::pedsim_msgs::AgentState_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.agent_states[i]);
     }
+    if (v.agent_states.empty() || false)
+      s << "]";
   }
 };
 

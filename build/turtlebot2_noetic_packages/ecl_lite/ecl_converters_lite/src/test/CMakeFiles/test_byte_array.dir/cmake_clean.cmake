@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_converters_lite/test_byte_array"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_converters_lite/test_byte_array.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_converters_lite/test_byte_array"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_converters_lite/test_byte_array.pdb"
   "CMakeFiles/test_byte_array.dir/byte_array.cpp.o"
 )
 

@@ -299,25 +299,41 @@ struct Printer< ::spencer_tracking_msgs::CompositeDetectedPerson_<ContainerAlloc
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::CompositeDetectedPerson_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "composite_detection_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.composite_detection_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "mean_confidence: ";
     Printer<double>::stream(s, indent + "  ", v.mean_confidence);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "max_confidence: ";
     Printer<double>::stream(s, indent + "  ", v.max_confidence);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "min_confidence: ";
     Printer<double>::stream(s, indent + "  ", v.min_confidence);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pose: ";
-    s << std::endl;
     Printer< ::geometry_msgs::PoseWithCovariance_<ContainerAllocator> >::stream(s, indent + "  ", v.pose);
-    s << indent << "original_detections[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "original_detections: ";
+    if (v.original_detections.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.original_detections.size(); ++i)
     {
-      s << indent << "  original_detections[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_tracking_msgs::DetectedPerson_<ContainerAllocator> >::stream(s, indent + "    ", v.original_detections[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_tracking_msgs::DetectedPerson_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.original_detections[i]);
     }
+    if (v.original_detections.empty() || false)
+      s << "]";
   }
 };
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_threads/demo_mutex"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_threads/demo_mutex.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_threads/demo_mutex"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_threads/demo_mutex.pdb"
   "CMakeFiles/demo_mutex.dir/mutex.cpp.o"
 )
 

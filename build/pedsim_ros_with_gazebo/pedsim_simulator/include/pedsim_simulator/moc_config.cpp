@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'config.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'config.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -74,7 +74,7 @@ QT_MOC_LITERAL(21, 399, 17) // "setAlongWallForce"
 static const uint qt_meta_data_Config[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       17,   14, // methods
@@ -132,7 +132,7 @@ static const uint qt_meta_data_Config[] = {
 void Config::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Config *>(_o);
+        Config *_t = static_cast<Config *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->forceFactorChanged((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
@@ -157,63 +157,63 @@ void Config::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Config::*)(QString , double );
+            typedef void (Config::*_t)(QString , double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorChanged)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorObstacleChanged)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceSigmaObstacleChanged)) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorSocialChanged)) {
                 *result = 3;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorGroupGazeChanged)) {
                 *result = 4;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorGroupCoherenceChanged)) {
                 *result = 5;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorGroupRepulsionChanged)) {
                 *result = 6;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorRandomChanged)) {
                 *result = 7;
                 return;
             }
         }
         {
-            using _t = void (Config::*)(double );
+            typedef void (Config::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Config::forceFactorAlongWallChanged)) {
                 *result = 8;
                 return;
@@ -222,14 +222,10 @@ void Config::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject Config::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_Config.data,
-    qt_meta_data_Config,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject Config::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_Config.data,
+      qt_meta_data_Config,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *Config::metaObject() const

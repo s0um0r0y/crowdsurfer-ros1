@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/include/pedsim_visualizer/PedsimVisualizerConfig.h"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/python3/dist-packages/pedsim_visualizer/cfg/PedsimVisualizerConfig.py"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/pedsim_visualizer/docs/PedsimVisualizerConfig-usage.dox"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/pedsim_visualizer/docs/PedsimVisualizerConfig.dox"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/pedsim_visualizer/docs/PedsimVisualizerConfig.wikidoc"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/pedsim_visualizer/PedsimVisualizerConfig.h"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/python3/dist-packages/pedsim_visualizer/cfg/PedsimVisualizerConfig.py"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/pedsim_visualizer/docs/PedsimVisualizerConfig-usage.dox"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/pedsim_visualizer/docs/PedsimVisualizerConfig.dox"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/pedsim_visualizer/docs/PedsimVisualizerConfig.wikidoc"
   "CMakeFiles/pedsim_visualizer_gencfg"
 )
 

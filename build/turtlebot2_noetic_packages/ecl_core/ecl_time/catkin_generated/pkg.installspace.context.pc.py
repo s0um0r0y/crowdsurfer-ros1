@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "ecl_build;ecl_config;ecl_errors;ecl_exceptions;ecl_time_lite".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lecl_time".split(';') if "-lecl_time" != "" else []
 PROJECT_NAME = "ecl_time"
-PROJECT_SPACE_DIR = "/home/soumoroy/Downloads/crowd_surfer-master/install"
+PROJECT_SPACE_DIR = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install"
 PROJECT_VERSION = "0.62.3"

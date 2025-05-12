@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/gennodejs/ros/turtlebot_calibration/msg/ScanAngle.js"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/gennodejs/ros/turtlebot_calibration/msg/ScanAngle.js"
   "CMakeFiles/turtlebot_calibration_generate_messages_nodejs"
 )
 

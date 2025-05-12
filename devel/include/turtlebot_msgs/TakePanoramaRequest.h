@@ -241,12 +241,20 @@ struct Printer< ::turtlebot_msgs::TakePanoramaRequest_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_msgs::TakePanoramaRequest_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "mode: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.mode);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pano_angle: ";
     Printer<float>::stream(s, indent + "  ", v.pano_angle);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "snap_interval: ";
     Printer<float>::stream(s, indent + "  ", v.snap_interval);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "rot_vel: ";
     Printer<float>::stream(s, indent + "  ", v.rot_vel);
   }

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'scene.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'scene.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -71,7 +71,7 @@ QT_MOC_LITERAL(22, 288, 12) // "cleanupScene"
 static const uint qt_meta_data_Scene[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       18,   14, // methods
@@ -131,7 +131,7 @@ static const uint qt_meta_data_Scene[] = {
 void Scene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Scene *>(_o);
+        Scene *_t = static_cast<Scene *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->aboutToStart(); break;
@@ -157,112 +157,112 @@ void Scene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Scene::*)();
+            typedef void (Scene::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::aboutToStart)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)();
+            typedef void (Scene::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::aboutToMoveAgents)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)();
+            typedef void (Scene::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::movedAgents)) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(double );
+            typedef void (Scene::*_t)(double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::sceneTimeChanged)) {
                 *result = 3;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::agentAdded)) {
                 *result = 4;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::agentRemoved)) {
                 *result = 5;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::obstacleAdded)) {
                 *result = 6;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::obstacleRemoved)) {
                 *result = 7;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::waypointAdded)) {
                 *result = 8;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::waypointRemoved)) {
                 *result = 9;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::agentClusterAdded)) {
                 *result = 10;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(int );
+            typedef void (Scene::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::agentClusterRemoved)) {
                 *result = 11;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(QString );
+            typedef void (Scene::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::waitingQueueAdded)) {
                 *result = 12;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(QString );
+            typedef void (Scene::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::waitingQueueRemoved)) {
                 *result = 13;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(QString );
+            typedef void (Scene::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::attractionAdded)) {
                 *result = 14;
                 return;
             }
         }
         {
-            using _t = void (Scene::*)(QString );
+            typedef void (Scene::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Scene::attractionRemoved)) {
                 *result = 15;
                 return;
@@ -271,14 +271,10 @@ void Scene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject Scene::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_Scene.data,
-    qt_meta_data_Scene,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject Scene::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_Scene.data,
+      qt_meta_data_Scene,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *Scene::metaObject() const

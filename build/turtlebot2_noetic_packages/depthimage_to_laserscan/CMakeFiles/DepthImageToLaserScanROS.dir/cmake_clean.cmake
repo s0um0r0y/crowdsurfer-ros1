@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libDepthImageToLaserScanROS.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libDepthImageToLaserScanROS.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libDepthImageToLaserScanROS.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libDepthImageToLaserScanROS.so"
   "CMakeFiles/DepthImageToLaserScanROS.dir/src/DepthImageToLaserScanROS.cpp.o"
 )
 

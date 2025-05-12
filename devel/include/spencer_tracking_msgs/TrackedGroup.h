@@ -248,19 +248,33 @@ struct Printer< ::spencer_tracking_msgs::TrackedGroup_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::TrackedGroup_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "group_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.group_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "age: ";
     Printer<ros::Duration>::stream(s, indent + "  ", v.age);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "centerOfGravity: ";
-    s << std::endl;
     Printer< ::geometry_msgs::PoseWithCovariance_<ContainerAllocator> >::stream(s, indent + "  ", v.centerOfGravity);
-    s << indent << "track_ids[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "track_ids: ";
+    if (v.track_ids.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.track_ids.size(); ++i)
     {
-      s << indent << "  track_ids[" << i << "]: ";
-      Printer<uint64_t>::stream(s, indent + "  ", v.track_ids[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<uint64_t>::stream(s, true ? std::string() : indent + "    ", v.track_ids[i]);
     }
+    if (v.track_ids.empty() || true)
+      s << "]";
   }
 };
 

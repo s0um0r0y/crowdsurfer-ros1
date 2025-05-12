@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_sigslots/demo_sigslots_manager"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_sigslots/demo_sigslots_manager.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_sigslots/demo_sigslots_manager"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_sigslots/demo_sigslots_manager.pdb"
   "CMakeFiles/demo_sigslots_manager.dir/sigslots_manager.cpp.o"
 )
 

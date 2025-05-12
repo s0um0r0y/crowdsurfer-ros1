@@ -226,17 +226,25 @@ struct Printer< ::spencer_tracking_msgs::TrackedPersons2d_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::TrackedPersons2d_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "boxes[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "boxes: ";
+    if (v.boxes.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.boxes.size(); ++i)
     {
-      s << indent << "  boxes[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_tracking_msgs::TrackedPerson2d_<ContainerAllocator> >::stream(s, indent + "    ", v.boxes[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_tracking_msgs::TrackedPerson2d_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.boxes[i]);
     }
+    if (v.boxes.empty() || false)
+      s << "]";
   }
 };
 

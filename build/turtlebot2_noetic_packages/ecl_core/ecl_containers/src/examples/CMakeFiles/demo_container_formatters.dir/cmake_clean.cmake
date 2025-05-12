@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_containers/demo_container_formatters"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_containers/demo_container_formatters.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_containers/demo_container_formatters"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_containers/demo_container_formatters.pdb"
   "CMakeFiles/demo_container_formatters.dir/formatters.cpp.o"
 )
 

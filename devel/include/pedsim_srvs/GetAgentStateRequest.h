@@ -184,6 +184,8 @@ struct Printer< ::pedsim_srvs::GetAgentStateRequest_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_srvs::GetAgentStateRequest_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "agent_id: ";
     Printer<int16_t>::stream(s, indent + "  ", v.agent_id);
   }

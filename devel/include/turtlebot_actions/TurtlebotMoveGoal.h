@@ -194,8 +194,12 @@ struct Printer< ::turtlebot_actions::TurtlebotMoveGoal_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_actions::TurtlebotMoveGoal_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "turn_distance: ";
     Printer<float>::stream(s, indent + "  ", v.turn_distance);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "forward_distance: ";
     Printer<float>::stream(s, indent + "  ", v.forward_distance);
   }

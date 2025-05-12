@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libturtlebot_follower.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libturtlebot_follower.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libturtlebot_follower.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libturtlebot_follower.so"
   "CMakeFiles/turtlebot_follower.dir/src/follower.cpp.o"
 )
 

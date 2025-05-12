@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"turtlebot_actions\"
 
-CXX_INCLUDES = -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4 -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_actions/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4 -I/usr/include/eigen3 
 

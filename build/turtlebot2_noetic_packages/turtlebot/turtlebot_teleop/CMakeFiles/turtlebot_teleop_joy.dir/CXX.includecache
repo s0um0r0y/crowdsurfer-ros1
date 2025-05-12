@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/turtlebot_joy.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/turtlebot_joy.cpp
 ros/ros.h
 -
 geometry_msgs/Twist.h
@@ -14,11 +14,11 @@ geometry_msgs/Twist.h
 sensor_msgs/Joy.h
 -
 boost/thread/mutex.hpp
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/boost/thread/mutex.hpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/boost/thread/mutex.hpp
 boost/thread/thread.hpp
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/boost/thread/thread.hpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/boost/thread/thread.hpp
 ros/console.h
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/ros/console.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot/turtlebot_teleop/src/ros/console.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string

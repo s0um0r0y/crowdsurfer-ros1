@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/turtlebot_msgs/manifest.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/turtlebot_msgs/msg/PanoramaImg.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/turtlebot_msgs/srv/SetFollowState.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/turtlebot_msgs/srv/TakePanorama.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/turtlebot_msgs/manifest.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/turtlebot_msgs/msg/PanoramaImg.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/turtlebot_msgs/srv/SetFollowState.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/turtlebot_msgs/srv/TakePanorama.l"
   "CMakeFiles/turtlebot_msgs_generate_messages_eus"
 )
 

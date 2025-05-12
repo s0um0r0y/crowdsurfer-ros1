@@ -235,18 +235,32 @@ struct Printer< ::spencer_tracking_msgs::TrackedPerson2d_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::TrackedPerson2d_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "track_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.track_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "person_height: ";
     Printer<float>::stream(s, indent + "  ", v.person_height);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "x: ";
     Printer<int32_t>::stream(s, indent + "  ", v.x);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "y: ";
     Printer<int32_t>::stream(s, indent + "  ", v.y);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "w: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.w);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "h: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.h);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "depth: ";
     Printer<float>::stream(s, indent + "  ", v.depth);
   }

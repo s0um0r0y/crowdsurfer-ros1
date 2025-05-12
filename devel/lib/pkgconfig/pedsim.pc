@@ -1,8 +1,8 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: pedsim
 Description: Description of pedsim
 Version: 0.2.0
-Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/3rdparty/libpedsim/include/
+Cflags: -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/pedsim_ros_with_gazebo/3rdparty/libpedsim/include/
 Libs: -L${prefix}/lib -lpedsim
 Requires: roscpp

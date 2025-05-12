@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/include/kobuki_bumper2pc/kobuki_bumper2pc.hpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/include/kobuki_bumper2pc/kobuki_bumper2pc.hpp
 ros/ros.h
 -
 nodelet/nodelet.h
@@ -16,11 +16,11 @@ sensor_msgs/PointCloud2.h
 kobuki_msgs/SensorState.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/src/kobuki_bumper2pc.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/src/kobuki_bumper2pc.cpp
 pluginlib/class_list_macros.h
 -
 kobuki_bumper2pc/kobuki_bumper2pc.hpp
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/src/kobuki_bumper2pc/kobuki_bumper2pc.hpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc/src/kobuki_bumper2pc/kobuki_bumper2pc.hpp
 
 /opt/ros/noetic/include/class_loader/class_loader.hpp
 boost/bind/bind.hpp
@@ -71,6 +71,8 @@ class_loader/meta_object.hpp
 /opt/ros/noetic/include/class_loader/class_loader/meta_object.hpp
 class_loader/visibility_control.hpp
 /opt/ros/noetic/include/class_loader/class_loader/visibility_control.hpp
+sanitizer/lsan_interface.h
+-
 
 /opt/ros/noetic/include/class_loader/exceptions.hpp
 stdexcept

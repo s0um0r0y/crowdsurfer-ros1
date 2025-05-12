@@ -1,8 +1,8 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: pedsim_srvs
 Description: Description of pedsim_srvs
 Version: 0.0.1
-Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include
+Cflags: -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime pedsim_msgs std_msgs

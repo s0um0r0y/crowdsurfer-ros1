@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'waypoint.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'waypoint.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -45,7 +45,7 @@ QT_MOC_LITERAL(4, 28, 1) // "y"
 static const uint qt_meta_data_Waypoint[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -67,7 +67,7 @@ static const uint qt_meta_data_Waypoint[] = {
 void Waypoint::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Waypoint *>(_o);
+        Waypoint *_t = static_cast<Waypoint *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->positionChanged((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
@@ -76,7 +76,7 @@ void Waypoint::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Waypoint::*)(double , double );
+            typedef void (Waypoint::*_t)(double , double );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Waypoint::positionChanged)) {
                 *result = 0;
                 return;
@@ -85,14 +85,10 @@ void Waypoint::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject Waypoint::staticMetaObject = { {
-    &ScenarioElement::staticMetaObject,
-    qt_meta_stringdata_Waypoint.data,
-    qt_meta_data_Waypoint,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject Waypoint::staticMetaObject = {
+    { &ScenarioElement::staticMetaObject, qt_meta_stringdata_Waypoint.data,
+      qt_meta_data_Waypoint,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *Waypoint::metaObject() const

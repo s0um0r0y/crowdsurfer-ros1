@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_ipc/ecl_test_shared_memory"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_ipc/ecl_test_shared_memory.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_ipc/ecl_test_shared_memory"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_ipc/ecl_test_shared_memory.pdb"
   "CMakeFiles/ecl_test_shared_memory.dir/shared_memory.cpp.o"
 )
 

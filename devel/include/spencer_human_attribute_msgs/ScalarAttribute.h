@@ -231,22 +231,44 @@ struct Printer< ::spencer_human_attribute_msgs::ScalarAttribute_<ContainerAlloca
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_human_attribute_msgs::ScalarAttribute_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "subject_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.subject_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "type: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.type);
-    s << indent << "values[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "values: ";
+    if (v.values.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.values.size(); ++i)
     {
-      s << indent << "  values[" << i << "]: ";
-      Printer<float>::stream(s, indent + "  ", v.values[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<float>::stream(s, true ? std::string() : indent + "    ", v.values[i]);
     }
-    s << indent << "confidences[]" << std::endl;
+    if (v.values.empty() || true)
+      s << "]";
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "confidences: ";
+    if (v.confidences.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.confidences.size(); ++i)
     {
-      s << indent << "  confidences[" << i << "]: ";
-      Printer<float>::stream(s, indent + "  ", v.confidences[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<float>::stream(s, true ? std::string() : indent + "    ", v.confidences[i]);
     }
+    if (v.confidences.empty() || true)
+      s << "]";
   }
 };
 

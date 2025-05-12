@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_statistics/ecl_test_covariance_ellipsoids"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_statistics/ecl_test_covariance_ellipsoids.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_statistics/ecl_test_covariance_ellipsoids"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_statistics/ecl_test_covariance_ellipsoids.pdb"
   "CMakeFiles/ecl_test_covariance_ellipsoids.dir/covariance_ellipsoids.cpp.o"
 )
 

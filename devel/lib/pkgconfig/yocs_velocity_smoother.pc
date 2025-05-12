@@ -1,8 +1,8 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: yocs_velocity_smoother
 Description: Description of yocs_velocity_smoother
 Version: 0.12.1
-Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/yocs_velocity_smoother/include
+Cflags: -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/yocs_velocity_smoother/include
 Libs: -L${prefix}/lib -lyocs_velocity_smoother_nodelet
 Requires: roscpp pluginlib nodelet ecl_threads dynamic_reconfigure geometry_msgs nav_msgs

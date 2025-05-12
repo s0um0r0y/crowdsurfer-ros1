@@ -6,7 +6,7 @@ from os import path as os_path
 from pkgutil import extend_path
 from sys import path as sys_path
 
-__extended_path = '/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki/kobuki_testsuite/src'.split(';')
+__extended_path = '/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki/kobuki_testsuite/src'.split(';')
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

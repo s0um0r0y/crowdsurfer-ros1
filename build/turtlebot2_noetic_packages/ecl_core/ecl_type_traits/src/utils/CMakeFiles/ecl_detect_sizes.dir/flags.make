@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_core/ecl_type_traits/include -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/include -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_core/ecl_mpl/include 
+CXX_INCLUDES = -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_core/ecl_type_traits/include -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/include -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_core/ecl_mpl/include 
 

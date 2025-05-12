@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_ipc/ecl_test_semaphores_timed"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_ipc/ecl_test_semaphores_timed.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_ipc/ecl_test_semaphores_timed"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_ipc/ecl_test_semaphores_timed.pdb"
   "CMakeFiles/ecl_test_semaphores_timed.dir/semaphores_timed.cpp.o"
 )
 

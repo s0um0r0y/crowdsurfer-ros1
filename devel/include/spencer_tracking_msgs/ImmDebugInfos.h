@@ -225,17 +225,25 @@ struct Printer< ::spencer_tracking_msgs::ImmDebugInfos_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::ImmDebugInfos_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "infos[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "infos: ";
+    if (v.infos.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.infos.size(); ++i)
     {
-      s << indent << "  infos[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_tracking_msgs::ImmDebugInfo_<ContainerAllocator> >::stream(s, indent + "    ", v.infos[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_tracking_msgs::ImmDebugInfo_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.infos[i]);
     }
+    if (v.infos.empty() || false)
+      s << "]";
   }
 };
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/python3/dist-packages/turtlebot_calibration/msg/_ScanAngle.py"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/python3/dist-packages/turtlebot_calibration/msg/__init__.py"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/python3/dist-packages/turtlebot_calibration/msg/_ScanAngle.py"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/python3/dist-packages/turtlebot_calibration/msg/__init__.py"
   "CMakeFiles/turtlebot_calibration_generate_messages_py"
 )
 

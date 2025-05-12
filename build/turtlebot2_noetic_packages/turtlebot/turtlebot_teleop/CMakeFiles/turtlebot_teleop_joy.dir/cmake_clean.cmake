@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_teleop/turtlebot_teleop_joy"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_teleop/turtlebot_teleop_joy.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_teleop/turtlebot_teleop_joy"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_teleop/turtlebot_teleop_joy.pdb"
   "CMakeFiles/turtlebot_teleop_joy.dir/src/turtlebot_joy.cpp.o"
 )
 

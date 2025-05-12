@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_ipc.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_ipc.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_ipc.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_ipc.so"
   "CMakeFiles/ecl_ipc.dir/semaphore_pos.cpp.o"
   "CMakeFiles/ecl_ipc.dir/shared_memory_pos.cpp.o"
 )

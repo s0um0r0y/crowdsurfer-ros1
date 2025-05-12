@@ -205,6 +205,8 @@ struct Printer< ::turtlebot_msgs::SetFollowStateRequest_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_msgs::SetFollowStateRequest_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "state: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.state);
   }

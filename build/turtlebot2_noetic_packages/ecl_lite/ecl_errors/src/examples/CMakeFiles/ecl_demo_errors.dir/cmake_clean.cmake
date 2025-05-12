@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_errors/ecl_demo_errors"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_errors/ecl_demo_errors.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_errors/ecl_demo_errors"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_errors/ecl_demo_errors.pdb"
   "CMakeFiles/ecl_demo_errors.dir/errors.cpp.o"
 )
 

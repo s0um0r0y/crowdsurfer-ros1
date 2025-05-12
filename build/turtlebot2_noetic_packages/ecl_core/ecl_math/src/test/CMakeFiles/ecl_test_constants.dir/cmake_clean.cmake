@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_math/ecl_test_constants"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_math/ecl_test_constants.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_math/ecl_test_constants"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_math/ecl_test_constants.pdb"
   "CMakeFiles/ecl_test_constants.dir/constants.cpp.o"
 )
 

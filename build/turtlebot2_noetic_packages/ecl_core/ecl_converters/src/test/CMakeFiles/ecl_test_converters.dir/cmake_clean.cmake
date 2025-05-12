@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_converters/ecl_test_converters"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_converters/ecl_test_converters.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_converters/ecl_test_converters"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_converters/ecl_test_converters.pdb"
   "CMakeFiles/ecl_test_converters.dir/converters.cpp.o"
 )
 

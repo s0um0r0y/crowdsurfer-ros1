@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_core_apps/ecl_hex"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_core_apps/ecl_hex.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_core_apps/ecl_hex"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_core_apps/ecl_hex.pdb"
   "CMakeFiles/ecl_hex.dir/hex.cpp.o"
 )
 

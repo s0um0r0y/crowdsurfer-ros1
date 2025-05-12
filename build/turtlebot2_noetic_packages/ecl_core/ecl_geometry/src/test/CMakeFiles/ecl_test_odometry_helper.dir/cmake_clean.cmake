@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_odometry_helper"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_odometry_helper.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_odometry_helper"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_odometry_helper.pdb"
   "CMakeFiles/ecl_test_odometry_helper.dir/odometry_helper.cpp.o"
 )
 

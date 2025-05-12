@@ -1,8 +1,8 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: kobuki_gazebo_plugins
 Description: Description of kobuki_gazebo_plugins
 Version: 0.5.7
-Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/include
+Cflags: -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/include
 Libs: -L${prefix}/lib -lgazebo_ros_kobuki
 Requires: gazebo_ros gazebo_plugins geometry_msgs kobuki_msgs nav_msgs roscpp sensor_msgs std_msgs tf

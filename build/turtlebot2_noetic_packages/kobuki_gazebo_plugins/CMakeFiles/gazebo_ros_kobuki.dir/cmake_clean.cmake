@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libgazebo_ros_kobuki.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libgazebo_ros_kobuki.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libgazebo_ros_kobuki.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libgazebo_ros_kobuki.so"
   "CMakeFiles/gazebo_ros_kobuki.dir/src/gazebo_ros_kobuki.cpp.o"
   "CMakeFiles/gazebo_ros_kobuki.dir/src/gazebo_ros_kobuki_loads.cpp.o"
   "CMakeFiles/gazebo_ros_kobuki.dir/src/gazebo_ros_kobuki_updates.cpp.o"

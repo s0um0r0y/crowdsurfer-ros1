@@ -235,24 +235,45 @@ struct Printer< ::spencer_tracking_msgs::ImmDebugInfo_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::ImmDebugInfo_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "track_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.track_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "innovation: ";
     Printer<double>::stream(s, indent + "  ", v.innovation);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "CpXX: ";
     Printer<double>::stream(s, indent + "  ", v.CpXX);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "CpYY: ";
     Printer<double>::stream(s, indent + "  ", v.CpYY);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "CXX: ";
     Printer<double>::stream(s, indent + "  ", v.CXX);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "CYY: ";
     Printer<double>::stream(s, indent + "  ", v.CYY);
-    s << indent << "modeProbabilities[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "modeProbabilities: ";
+    if (v.modeProbabilities.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.modeProbabilities.size(); ++i)
     {
-      s << indent << "  modeProbabilities[" << i << "]: ";
-      Printer<double>::stream(s, indent + "  ", v.modeProbabilities[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<double>::stream(s, true ? std::string() : indent + "    ", v.modeProbabilities[i]);
     }
+    if (v.modeProbabilities.empty() || true)
+      s << "]";
   }
 };
 

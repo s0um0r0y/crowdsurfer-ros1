@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/test_function_objects"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/test_function_objects.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/test_function_objects"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/test_function_objects.pdb"
   "CMakeFiles/test_function_objects.dir/function_objects.cpp.o"
 )
 

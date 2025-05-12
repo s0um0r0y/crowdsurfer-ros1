@@ -1,8 +1,0 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/install
-
-Name: local_dynamic_nav
-Description: Description of local_dynamic_nav
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

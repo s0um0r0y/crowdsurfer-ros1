@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_converters/demo_float_converters"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_converters/demo_float_converters.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_converters/demo_float_converters"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_converters/demo_float_converters.pdb"
   "CMakeFiles/demo_float_converters.dir/float_converters.cpp.o"
 )
 

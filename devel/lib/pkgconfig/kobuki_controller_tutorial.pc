@@ -1,8 +1,8 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: kobuki_controller_tutorial
 Description: Description of kobuki_controller_tutorial
 Version: 0.7.6
-Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki/kobuki_controller_tutorial/include
+Cflags: -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki/kobuki_controller_tutorial/include
 Libs: -L${prefix}/lib -lbump_blink_controller_nodelet
 Requires: roscpp nodelet pluginlib std_msgs kobuki_msgs yocs_controllers
