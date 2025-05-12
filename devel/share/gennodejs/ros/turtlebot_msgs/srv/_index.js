@@ -1,10 +1,10 @@
 
 "use strict";
 
-let TakePanorama = require('./TakePanorama.js')
 let SetFollowState = require('./SetFollowState.js')
+let TakePanorama = require('./TakePanorama.js')
 
 module.exports = {
-  TakePanorama: TakePanorama,
   SetFollowState: SetFollowState,
+  TakePanorama: TakePanorama,
 };

@@ -184,12 +184,21 @@ struct Printer< ::pedsim_srvs::GetAllAgentsStateRequest_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_srvs::GetAllAgentsStateRequest_<ContainerAllocator>& v)
   {
-    s << indent << "agent_ids[]" << std::endl;
+    if (false || !indent.empty())
+      s << std::endl;
+    s << indent << "agent_ids: ";
+    if (v.agent_ids.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.agent_ids.size(); ++i)
     {
-      s << indent << "  agent_ids[" << i << "]: ";
-      Printer<int16_t>::stream(s, indent + "  ", v.agent_ids[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<int16_t>::stream(s, true ? std::string() : indent + "    ", v.agent_ids[i]);
     }
+    if (v.agent_ids.empty() || true)
+      s << "]";
   }
 };
 

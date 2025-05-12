@@ -1,8 +1,8 @@
-# Install script for directory: /home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins
+# Install script for directory: /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/Downloads/crowd_surfer-master/install")
+  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/kobuki_gazebo_plugins/catkin_generated/installspace/kobuki_gazebo_plugins.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/kobuki_gazebo_plugins/catkin_generated/installspace/kobuki_gazebo_plugins.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kobuki_gazebo_plugins/cmake" TYPE FILE FILES
-    "/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/kobuki_gazebo_plugins/catkin_generated/installspace/kobuki_gazebo_pluginsConfig.cmake"
-    "/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/kobuki_gazebo_plugins/catkin_generated/installspace/kobuki_gazebo_pluginsConfig-version.cmake"
+    "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/kobuki_gazebo_plugins/catkin_generated/installspace/kobuki_gazebo_pluginsConfig.cmake"
+    "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/kobuki_gazebo_plugins/catkin_generated/installspace/kobuki_gazebo_pluginsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kobuki_gazebo_plugins" TYPE FILE FILES "/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kobuki_gazebo_plugins" TYPE FILE FILES "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_kobuki.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libgazebo_ros_kobuki.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libgazebo_ros_kobuki.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_kobuki.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_kobuki.so")
     file(RPATH_CHANGE

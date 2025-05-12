@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_devices/demo_serial_timeouts"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_devices/demo_serial_timeouts.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_devices/demo_serial_timeouts"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_devices/demo_serial_timeouts.pdb"
   "CMakeFiles/demo_serial_timeouts.dir/serial_timeouts.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_actions/turtlebot_move_action_server"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_actions/turtlebot_move_action_server.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_actions/turtlebot_move_action_server"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_actions/turtlebot_move_action_server.pdb"
   "CMakeFiles/turtlebot_move_action_server.dir/src/turtlebot_move_action_server.cpp.o"
 )
 

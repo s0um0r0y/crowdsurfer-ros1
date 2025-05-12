@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_threads/ecl_test_threadable"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_threads/ecl_test_threadable.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_threads/ecl_test_threadable"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_threads/ecl_test_threadable.pdb"
   "CMakeFiles/ecl_test_threadable.dir/threadable.cpp.o"
 )
 

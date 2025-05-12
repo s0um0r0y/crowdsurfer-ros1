@@ -261,15 +261,15 @@ std::string output_frame_id;
 
 
 
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       int scan_height;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double scan_time;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double range_min;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double range_max;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       std::string output_frame_id;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -297,16 +297,16 @@ std::string output_frame_id;
       {
         ROS_ERROR("DepthConfig::__fromMessage__ called with an unexpected parameter.");
         ROS_ERROR("Booleans:");
-        for (unsigned int i = 0; i < msg.bools.size(); i++)
+        for (size_t i = 0; i < msg.bools.size(); i++)
           ROS_ERROR("  %s", msg.bools[i].name.c_str());
         ROS_ERROR("Integers:");
-        for (unsigned int i = 0; i < msg.ints.size(); i++)
+        for (size_t i = 0; i < msg.ints.size(); i++)
           ROS_ERROR("  %s", msg.ints[i].name.c_str());
         ROS_ERROR("Doubles:");
-        for (unsigned int i = 0; i < msg.doubles.size(); i++)
+        for (size_t i = 0; i < msg.doubles.size(); i++)
           ROS_ERROR("  %s", msg.doubles[i].name.c_str());
         ROS_ERROR("Strings:");
-        for (unsigned int i = 0; i < msg.strs.size(); i++)
+        for (size_t i = 0; i < msg.strs.size(); i++)
           ROS_ERROR("  %s", msg.strs[i].name.c_str());
         // @todo Check that there are no duplicates. Make this error more
         // explicit.
@@ -409,59 +409,59 @@ std::string output_frame_id;
     DepthConfigStatics()
     {
 DepthConfig::GroupDescription<DepthConfig::DEFAULT, DepthConfig> Default("Default", "", 0, 0, true, &DepthConfig::groups);
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.scan_height = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.scan_height = 500;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.scan_height = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<int>("scan_height", "int", 0, "Height of the laser band (in pixels).", "", &DepthConfig::scan_height)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<int>("scan_height", "int", 0, "Height of the laser band (in pixels).", "", &DepthConfig::scan_height)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.scan_time = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.scan_time = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.scan_time = 0.033;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("scan_time", "double", 0, "Time for the entire scan sweep.", "", &DepthConfig::scan_time)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("scan_time", "double", 0, "Time for the entire scan sweep.", "", &DepthConfig::scan_time)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.range_min = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.range_min = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.range_min = 0.45;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("range_min", "double", 0, "Minimum reported range (in meters).", "", &DepthConfig::range_min)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("range_min", "double", 0, "Minimum reported range (in meters).", "", &DepthConfig::range_min)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.range_max = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.range_max = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.range_max = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("range_max", "double", 0, "Maximum reported range (in meters).", "", &DepthConfig::range_max)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("range_max", "double", 0, "Maximum reported range (in meters).", "", &DepthConfig::range_max)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.output_frame_id = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.output_frame_id = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.output_frame_id = "camera_depth_frame";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<std::string>("output_frame_id", "str", 0, "Output frame_id for the laserscan.", "", &DepthConfig::output_frame_id)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<std::string>("output_frame_id", "str", 0, "Output frame_id for the laserscan.", "", &DepthConfig::output_frame_id)));
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(DepthConfig::AbstractGroupDescriptionConstPtr(new DepthConfig::GroupDescription<DepthConfig::DEFAULT, DepthConfig>(Default)));
 //#line 369 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 

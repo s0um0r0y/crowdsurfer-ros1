@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'social_activities_display.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'social_activities_display.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -45,7 +45,7 @@ QT_MOC_LITERAL(3, 79, 13) // "stylesChanged"
 static const uint qt_meta_data_spencer_tracking_rviz_plugin__SocialActivitiesDisplay[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -69,7 +69,7 @@ static const uint qt_meta_data_spencer_tracking_rviz_plugin__SocialActivitiesDis
 void spencer_tracking_rviz_plugin::SocialActivitiesDisplay::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<SocialActivitiesDisplay *>(_o);
+        SocialActivitiesDisplay *_t = static_cast<SocialActivitiesDisplay *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->personVisualTypeChanged(); break;
@@ -80,14 +80,10 @@ void spencer_tracking_rviz_plugin::SocialActivitiesDisplay::qt_static_metacall(Q
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject spencer_tracking_rviz_plugin::SocialActivitiesDisplay::staticMetaObject = { {
-    &PersonDisplayCommon<spencer_social_relation_msgs::SocialActivities>::staticMetaObject,
-    qt_meta_stringdata_spencer_tracking_rviz_plugin__SocialActivitiesDisplay.data,
-    qt_meta_data_spencer_tracking_rviz_plugin__SocialActivitiesDisplay,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject spencer_tracking_rviz_plugin::SocialActivitiesDisplay::staticMetaObject = {
+    { &PersonDisplayCommon<spencer_social_relation_msgs::SocialActivities>::staticMetaObject, qt_meta_stringdata_spencer_tracking_rviz_plugin__SocialActivitiesDisplay.data,
+      qt_meta_data_spencer_tracking_rviz_plugin__SocialActivitiesDisplay,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *spencer_tracking_rviz_plugin::SocialActivitiesDisplay::metaObject() const

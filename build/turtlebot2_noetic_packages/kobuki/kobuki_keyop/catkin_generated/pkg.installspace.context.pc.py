@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "geometry_msgs;std_srvs;std_msgs;roscpp;ecl_exceptions;ecl_threads;ecl_time;kobuki_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lkobuki".split(';') if "-lkobuki" != "" else []
 PROJECT_NAME = "kobuki_keyop"
-PROJECT_SPACE_DIR = "/home/soumoroy/Downloads/crowd_surfer-master/install"
+PROJECT_SPACE_DIR = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install"
 PROJECT_VERSION = "0.7.6"

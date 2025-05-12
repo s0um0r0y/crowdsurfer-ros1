@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/gennodejs/ros/turtlebot_msgs/msg/PanoramaImg.js"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/gennodejs/ros/turtlebot_msgs/srv/SetFollowState.js"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/gennodejs/ros/turtlebot_msgs/srv/TakePanorama.js"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/gennodejs/ros/turtlebot_msgs/msg/PanoramaImg.js"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/gennodejs/ros/turtlebot_msgs/srv/SetFollowState.js"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/gennodejs/ros/turtlebot_msgs/srv/TakePanorama.js"
   "CMakeFiles/turtlebot_msgs_generate_messages_nodejs"
 )
 

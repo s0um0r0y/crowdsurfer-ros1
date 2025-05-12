@@ -270,25 +270,40 @@ struct Printer< ::spencer_human_attribute_msgs::HumanAttributes_<ContainerAlloca
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_human_attribute_msgs::HumanAttributes_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "categoricalAttributes[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "categoricalAttributes: ";
+    if (v.categoricalAttributes.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.categoricalAttributes.size(); ++i)
     {
-      s << indent << "  categoricalAttributes[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_human_attribute_msgs::CategoricalAttribute_<ContainerAllocator> >::stream(s, indent + "    ", v.categoricalAttributes[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_human_attribute_msgs::CategoricalAttribute_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.categoricalAttributes[i]);
     }
-    s << indent << "scalarAttributes[]" << std::endl;
+    if (v.categoricalAttributes.empty() || false)
+      s << "]";
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "scalarAttributes: ";
+    if (v.scalarAttributes.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.scalarAttributes.size(); ++i)
     {
-      s << indent << "  scalarAttributes[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_human_attribute_msgs::ScalarAttribute_<ContainerAllocator> >::stream(s, indent + "    ", v.scalarAttributes[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_human_attribute_msgs::ScalarAttribute_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.scalarAttributes[i]);
     }
+    if (v.scalarAttributes.empty() || false)
+      s << "]";
   }
 };
 

@@ -273,27 +273,27 @@ bool paused;
 
 
 
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double update_rate;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double simulation_factor;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_obstacle;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double sigma_obstacle;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_social;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_group_gaze;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_group_coherence;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_group_repulsion;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_random;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double force_wall;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       bool paused;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -321,16 +321,16 @@ bool paused;
       {
         ROS_ERROR("PedsimSimulatorConfig::__fromMessage__ called with an unexpected parameter.");
         ROS_ERROR("Booleans:");
-        for (unsigned int i = 0; i < msg.bools.size(); i++)
+        for (size_t i = 0; i < msg.bools.size(); i++)
           ROS_ERROR("  %s", msg.bools[i].name.c_str());
         ROS_ERROR("Integers:");
-        for (unsigned int i = 0; i < msg.ints.size(); i++)
+        for (size_t i = 0; i < msg.ints.size(); i++)
           ROS_ERROR("  %s", msg.ints[i].name.c_str());
         ROS_ERROR("Doubles:");
-        for (unsigned int i = 0; i < msg.doubles.size(); i++)
+        for (size_t i = 0; i < msg.doubles.size(); i++)
           ROS_ERROR("  %s", msg.doubles[i].name.c_str());
         ROS_ERROR("Strings:");
-        for (unsigned int i = 0; i < msg.strs.size(); i++)
+        for (size_t i = 0; i < msg.strs.size(); i++)
           ROS_ERROR("  %s", msg.strs[i].name.c_str());
         // @todo Check that there are no duplicates. Make this error more
         // explicit.
@@ -433,119 +433,119 @@ bool paused;
     PedsimSimulatorConfigStatics()
     {
 PedsimSimulatorConfig::GroupDescription<PedsimSimulatorConfig::DEFAULT, PedsimSimulatorConfig> Default("Default", "", 0, 0, true, &PedsimSimulatorConfig::groups);
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.update_rate = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.update_rate = 50.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.update_rate = 24.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("update_rate", "double", 0, "Simulation frequency (Hz)", "", &PedsimSimulatorConfig::update_rate)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("update_rate", "double", 0, "Simulation frequency (Hz)", "", &PedsimSimulatorConfig::update_rate)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.simulation_factor = 0.1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.simulation_factor = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.simulation_factor = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("simulation_factor", "double", 0, "Simulation factor", "", &PedsimSimulatorConfig::simulation_factor)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("simulation_factor", "double", 0, "Simulation factor", "", &PedsimSimulatorConfig::simulation_factor)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_obstacle = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_obstacle = 50.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_obstacle = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_obstacle", "double", 0, "Obstacle force weight", "", &PedsimSimulatorConfig::force_obstacle)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_obstacle", "double", 0, "Obstacle force weight", "", &PedsimSimulatorConfig::force_obstacle)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.sigma_obstacle = 0.1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.sigma_obstacle = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.sigma_obstacle = 0.2;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("sigma_obstacle", "double", 0, "Sigma factor (obstacles)", "", &PedsimSimulatorConfig::sigma_obstacle)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("sigma_obstacle", "double", 0, "Sigma factor (obstacles)", "", &PedsimSimulatorConfig::sigma_obstacle)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_social = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_social = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_social = 5.1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_social", "double", 0, "Social force weight", "", &PedsimSimulatorConfig::force_social)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_social", "double", 0, "Social force weight", "", &PedsimSimulatorConfig::force_social)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_group_gaze = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_group_gaze = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_group_gaze = 3.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_group_gaze", "double", 0, "Group gaze force weight", "", &PedsimSimulatorConfig::force_group_gaze)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_group_gaze", "double", 0, "Group gaze force weight", "", &PedsimSimulatorConfig::force_group_gaze)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_group_coherence = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_group_coherence = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_group_coherence = 2.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_group_coherence", "double", 0, "Group coherence force weight", "", &PedsimSimulatorConfig::force_group_coherence)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_group_coherence", "double", 0, "Group coherence force weight", "", &PedsimSimulatorConfig::force_group_coherence)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_group_repulsion = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_group_repulsion = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_group_repulsion = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_group_repulsion", "double", 0, "Group repulsion force weight", "", &PedsimSimulatorConfig::force_group_repulsion)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_group_repulsion", "double", 0, "Group repulsion force weight", "", &PedsimSimulatorConfig::force_group_repulsion)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_random = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_random = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_random = 0.1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_random", "double", 0, "Random force weight", "", &PedsimSimulatorConfig::force_random)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_random", "double", 0, "Random force weight", "", &PedsimSimulatorConfig::force_random)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.force_wall = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.force_wall = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.force_wall = 2.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_wall", "double", 0, "Wall force weight", "", &PedsimSimulatorConfig::force_wall)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<double>("force_wall", "double", 0, "Wall force weight", "", &PedsimSimulatorConfig::force_wall)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.paused = 0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.paused = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.paused = 0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<bool>("paused", "bool", 0, "Pause/unpause simulation", "", &PedsimSimulatorConfig::paused)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(PedsimSimulatorConfig::AbstractParamDescriptionConstPtr(new PedsimSimulatorConfig::ParamDescription<bool>("paused", "bool", 0, "Pause/unpause simulation", "", &PedsimSimulatorConfig::paused)));
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(PedsimSimulatorConfig::AbstractGroupDescriptionConstPtr(new PedsimSimulatorConfig::GroupDescription<PedsimSimulatorConfig::DEFAULT, PedsimSimulatorConfig>(Default)));
 //#line 369 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 

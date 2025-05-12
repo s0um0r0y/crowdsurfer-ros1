@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_threads/demo_thread"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_threads/demo_thread.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_threads/demo_thread"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_threads/demo_thread.pdb"
   "CMakeFiles/demo_thread.dir/thread.cpp.o"
 )
 

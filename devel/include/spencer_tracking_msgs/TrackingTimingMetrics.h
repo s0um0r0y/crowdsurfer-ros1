@@ -275,25 +275,44 @@ struct Printer< ::spencer_tracking_msgs::TrackingTimingMetrics_<ContainerAllocat
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::TrackingTimingMetrics_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "track_count: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.track_count);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "cycle_no: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.cycle_no);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "average_cycle_time: ";
     Printer<float>::stream(s, indent + "  ", v.average_cycle_time);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "cycle_time: ";
     Printer<float>::stream(s, indent + "  ", v.cycle_time);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "average_processing_rate: ";
     Printer<float>::stream(s, indent + "  ", v.average_processing_rate);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "cpu_load: ";
     Printer<float>::stream(s, indent + "  ", v.cpu_load);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "average_cpu_load: ";
     Printer<float>::stream(s, indent + "  ", v.average_cpu_load);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "elapsed_time: ";
     Printer<float>::stream(s, indent + "  ", v.elapsed_time);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "elapsed_cpu_time: ";
     Printer<float>::stream(s, indent + "  ", v.elapsed_cpu_time);
   }

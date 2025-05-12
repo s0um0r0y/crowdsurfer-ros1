@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_containers/ecl_test_arrays"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_containers/ecl_test_arrays.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_containers/ecl_test_arrays"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_containers/ecl_test_arrays.pdb"
   "CMakeFiles/ecl_test_arrays.dir/arrays.cpp.o"
 )
 

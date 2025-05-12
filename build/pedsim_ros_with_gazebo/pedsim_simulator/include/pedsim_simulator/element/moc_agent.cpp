@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'agent.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'agent.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -63,7 +63,7 @@ QT_MOC_LITERAL(17, 210, 12) // "forceRemoved"
 static const uint qt_meta_data_Agent[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       12,   14, // methods
@@ -107,7 +107,7 @@ static const uint qt_meta_data_Agent[] = {
 void Agent::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Agent *>(_o);
+        Agent *_t = static_cast<Agent *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->positionChanged((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
@@ -127,84 +127,84 @@ void Agent::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::positionChanged)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::velocityChanged)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::accelerationChanged)) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::desiredForceChanged)) {
                 *result = 3;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::obstacleForceChanged)) {
                 *result = 4;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::socialForceChanged)) {
                 *result = 5;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(double , double ) const;
+            typedef void (Agent::*_t)(double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::myForceChanged)) {
                 *result = 6;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(QString , double , double ) const;
+            typedef void (Agent::*_t)(QString , double , double ) const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::additionalForceChanged)) {
                 *result = 7;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)() const;
+            typedef void (Agent::*_t)() const;
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::reachedWaypoint)) {
                 *result = 8;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(int );
+            typedef void (Agent::*_t)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::typeChanged)) {
                 *result = 9;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(QString );
+            typedef void (Agent::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::forceAdded)) {
                 *result = 10;
                 return;
             }
         }
         {
-            using _t = void (Agent::*)(QString );
+            typedef void (Agent::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Agent::forceRemoved)) {
                 *result = 11;
                 return;
@@ -213,14 +213,10 @@ void Agent::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject Agent::staticMetaObject = { {
-    &ScenarioElement::staticMetaObject,
-    qt_meta_stringdata_Agent.data,
-    qt_meta_data_Agent,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject Agent::staticMetaObject = {
+    { &ScenarioElement::staticMetaObject, qt_meta_stringdata_Agent.data,
+      qt_meta_data_Agent,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *Agent::metaObject() const

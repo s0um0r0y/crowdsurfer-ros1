@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_config/test_endianness"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_config/test_endianness.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_config/test_endianness"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_config/test_endianness.pdb"
   "CMakeFiles/test_endianness.dir/endianness.cpp.o"
 )
 

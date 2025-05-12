@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_detect_posix"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_detect_posix.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_detect_posix"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_detect_posix.pdb"
   "CMakeFiles/ecl_detect_posix.dir/detect_posix.cpp.o"
 )
 

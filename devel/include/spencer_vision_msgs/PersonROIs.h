@@ -263,21 +263,33 @@ struct Printer< ::spencer_vision_msgs::PersonROIs_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_vision_msgs::PersonROIs_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "rgb_topic: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.rgb_topic);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "depth_topic: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.depth_topic);
-    s << indent << "elements[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "elements: ";
+    if (v.elements.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.elements.size(); ++i)
     {
-      s << indent << "  elements[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_vision_msgs::PersonROI_<ContainerAllocator> >::stream(s, indent + "    ", v.elements[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_vision_msgs::PersonROI_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.elements[i]);
     }
+    if (v.elements.empty() || false)
+      s << "]";
   }
 };
 

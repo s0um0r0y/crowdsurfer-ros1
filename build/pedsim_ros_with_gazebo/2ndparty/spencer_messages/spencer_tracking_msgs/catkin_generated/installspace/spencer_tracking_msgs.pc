@@ -1,4 +1,4 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/install
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install
 
 Name: spencer_tracking_msgs
 Description: Description of spencer_tracking_msgs

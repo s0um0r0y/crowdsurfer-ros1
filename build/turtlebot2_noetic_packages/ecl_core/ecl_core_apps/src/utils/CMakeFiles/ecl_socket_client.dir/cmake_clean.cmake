@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_core_apps/ecl_socket_client"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_core_apps/ecl_socket_client.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_core_apps/ecl_socket_client"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_core_apps/ecl_socket_client.pdb"
   "CMakeFiles/ecl_socket_client.dir/socket_client.cpp.o"
 )
 

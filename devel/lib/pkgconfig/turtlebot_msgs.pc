@@ -1,8 +1,8 @@
-prefix=/home/soumoroy/Downloads/crowd_surfer-master/devel
+prefix=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel
 
 Name: turtlebot_msgs
 Description: Description of turtlebot_msgs
 Version: 2.2.1
-Cflags: -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include
+Cflags: -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include
 Libs: -L${prefix}/lib 
 Requires: std_msgs sensor_msgs std_srvs message_runtime

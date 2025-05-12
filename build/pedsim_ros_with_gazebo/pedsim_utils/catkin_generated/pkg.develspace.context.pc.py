@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_utils/include".split(';') if "/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_utils/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/pedsim_ros_with_gazebo/pedsim_utils/include".split(';') if "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/pedsim_ros_with_gazebo/pedsim_utils/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "cmake_modules;geometry_msgs;pedsim_msgs;roscpp;rospy".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lpedsim_utils".split(';') if "-lpedsim_utils" != "" else []
 PROJECT_NAME = "pedsim_utils"
-PROJECT_SPACE_DIR = "/home/soumoroy/Downloads/crowd_surfer-master/devel"
+PROJECT_SPACE_DIR = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel"
 PROJECT_VERSION = "0.1.0"

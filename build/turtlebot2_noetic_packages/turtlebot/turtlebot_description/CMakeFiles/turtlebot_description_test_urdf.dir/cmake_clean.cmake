@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_description/turtlebot_description_test_urdf"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/turtlebot_description/turtlebot_description_test_urdf.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_description/turtlebot_description_test_urdf"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/turtlebot_description/turtlebot_description_test_urdf.pdb"
   "CMakeFiles/turtlebot_description_test_urdf.dir/test/test_urdf.cpp.o"
 )
 

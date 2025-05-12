@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/demo_constructors"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/demo_constructors.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/demo_constructors"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/demo_constructors.pdb"
   "CMakeFiles/demo_constructors.dir/constructors.cpp.o"
 )
 

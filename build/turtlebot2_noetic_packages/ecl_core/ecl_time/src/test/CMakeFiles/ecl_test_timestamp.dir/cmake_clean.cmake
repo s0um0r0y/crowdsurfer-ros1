@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_time/ecl_test_timestamp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_time/ecl_test_timestamp.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_time/ecl_test_timestamp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_time/ecl_test_timestamp.pdb"
   "CMakeFiles/ecl_test_timestamp.dir/timestamp.cpp.o"
 )
 

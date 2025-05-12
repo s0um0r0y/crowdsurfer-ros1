@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/include/turtlebot_follower/FollowerConfig.h"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/python3/dist-packages/turtlebot_follower/cfg/FollowerConfig.py"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/turtlebot_follower/docs/FollowerConfig-usage.dox"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/turtlebot_follower/docs/FollowerConfig.dox"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/turtlebot_follower/docs/FollowerConfig.wikidoc"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include/turtlebot_follower/FollowerConfig.h"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/python3/dist-packages/turtlebot_follower/cfg/FollowerConfig.py"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/turtlebot_follower/docs/FollowerConfig-usage.dox"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/turtlebot_follower/docs/FollowerConfig.dox"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/turtlebot_follower/docs/FollowerConfig.wikidoc"
   "CMakeFiles/turtlebot_follower_gencfg"
 )
 

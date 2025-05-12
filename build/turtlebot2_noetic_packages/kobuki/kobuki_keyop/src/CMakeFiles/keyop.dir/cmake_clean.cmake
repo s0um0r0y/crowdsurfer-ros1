@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/kobuki_keyop/keyop"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/kobuki_keyop/keyop.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/kobuki_keyop/keyop"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/kobuki_keyop/keyop.pdb"
   "CMakeFiles/keyop.dir/keyop_core.cpp.o"
   "CMakeFiles/keyop.dir/main.cpp.o"
 )

@@ -226,17 +226,25 @@ struct Printer< ::pedsim_msgs::LineObstacles_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::LineObstacles_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "obstacles[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "obstacles: ";
+    if (v.obstacles.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.obstacles.size(); ++i)
     {
-      s << indent << "  obstacles[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::pedsim_msgs::LineObstacle_<ContainerAllocator> >::stream(s, indent + "    ", v.obstacles[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::pedsim_msgs::LineObstacle_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.obstacles[i]);
     }
+    if (v.obstacles.empty() || false)
+      s << "]";
   }
 };
 

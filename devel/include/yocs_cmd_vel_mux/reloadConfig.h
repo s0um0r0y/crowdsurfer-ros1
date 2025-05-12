@@ -255,9 +255,9 @@ std::string yaml_cfg_data;
 
 
 
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       std::string yaml_cfg_file;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       std::string yaml_cfg_data;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -285,16 +285,16 @@ std::string yaml_cfg_data;
       {
         ROS_ERROR("reloadConfig::__fromMessage__ called with an unexpected parameter.");
         ROS_ERROR("Booleans:");
-        for (unsigned int i = 0; i < msg.bools.size(); i++)
+        for (size_t i = 0; i < msg.bools.size(); i++)
           ROS_ERROR("  %s", msg.bools[i].name.c_str());
         ROS_ERROR("Integers:");
-        for (unsigned int i = 0; i < msg.ints.size(); i++)
+        for (size_t i = 0; i < msg.ints.size(); i++)
           ROS_ERROR("  %s", msg.ints[i].name.c_str());
         ROS_ERROR("Doubles:");
-        for (unsigned int i = 0; i < msg.doubles.size(); i++)
+        for (size_t i = 0; i < msg.doubles.size(); i++)
           ROS_ERROR("  %s", msg.doubles[i].name.c_str());
         ROS_ERROR("Strings:");
-        for (unsigned int i = 0; i < msg.strs.size(); i++)
+        for (size_t i = 0; i < msg.strs.size(); i++)
           ROS_ERROR("  %s", msg.strs[i].name.c_str());
         // @todo Check that there are no duplicates. Make this error more
         // explicit.
@@ -397,29 +397,29 @@ std::string yaml_cfg_data;
     reloadConfigStatics()
     {
 reloadConfig::GroupDescription<reloadConfig::DEFAULT, reloadConfig> Default("Default", "", 0, 0, true, &reloadConfig::groups);
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.yaml_cfg_file = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.yaml_cfg_file = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.yaml_cfg_file = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(reloadConfig::AbstractParamDescriptionConstPtr(new reloadConfig::ParamDescription<std::string>("yaml_cfg_file", "str", 0, "Pathname to a yaml file for re-configuration of the mux", "", &reloadConfig::yaml_cfg_file)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(reloadConfig::AbstractParamDescriptionConstPtr(new reloadConfig::ParamDescription<std::string>("yaml_cfg_file", "str", 0, "Pathname to a yaml file for re-configuration of the mux", "", &reloadConfig::yaml_cfg_file)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.yaml_cfg_data = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.yaml_cfg_data = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.yaml_cfg_data = "";
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(reloadConfig::AbstractParamDescriptionConstPtr(new reloadConfig::ParamDescription<std::string>("yaml_cfg_data", "str", 0, "Yaml-formatted string for re-configuration of the mux", "", &reloadConfig::yaml_cfg_data)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(reloadConfig::AbstractParamDescriptionConstPtr(new reloadConfig::ParamDescription<std::string>("yaml_cfg_data", "str", 0, "Yaml-formatted string for re-configuration of the mux", "", &reloadConfig::yaml_cfg_data)));
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(reloadConfig::AbstractGroupDescriptionConstPtr(new reloadConfig::GroupDescription<reloadConfig::DEFAULT, reloadConfig>(Default)));
 //#line 369 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 

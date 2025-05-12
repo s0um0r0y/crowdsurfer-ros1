@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/pedsim_visualizer/pedsim_visualizer_node"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/pedsim_visualizer/pedsim_visualizer_node.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/pedsim_visualizer/pedsim_visualizer_node"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/pedsim_visualizer/pedsim_visualizer_node.pdb"
   "CMakeFiles/pedsim_visualizer_node.dir/src/sim_visualizer.cpp.o"
   "CMakeFiles/pedsim_visualizer_node.dir/src/sim_visualizer_node.cpp.o"
 )

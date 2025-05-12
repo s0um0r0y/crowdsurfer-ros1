@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/build/pedsim_ros_with_gazebo/pedsim_simulator/simulate_diff_drive_robot_autogen/mocs_compilation.cpp
-
-/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/pedsim_simulator/src/simulate_diff_drive_robot.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/pedsim_ros_with_gazebo/pedsim_simulator/src/simulate_diff_drive_robot.cpp
 geometry_msgs/Twist.h
 -
 ros/ros.h

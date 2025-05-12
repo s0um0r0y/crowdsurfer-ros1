@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/turtlebot_calibration/msg/ScanAngle.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/turtlebot_calibration/msg/ScanAngle.lisp"
   "CMakeFiles/turtlebot_calibration_generate_messages_lisp"
 )
 

@@ -5,6 +5,30 @@
 # it emulates the modifications of the setup script without recurring computations
 
 # new environment variables
+export TURTLEBOT_3D_SENSOR='asus_xtion_pro'
+export TURTLEBOT_BASE='kobuki'
+export TURTLEBOT_BATTERY='/sys/class/power_supply/BAT0'
+export TURTLEBOT_GAZEBO_MAP_FILE='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo/maps/playground.yaml'
+export TURTLEBOT_GAZEBO_WORLD_FILE='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_gazebo/worlds/playground.world'
+export TURTLEBOT_INTERACTIONS_LIST='[turtlebot_bringup/admin.interactions, turtlebot_bringup/documentation.interactions, turtlebot_bringup/pairing.interactions, turtlebot_bringup/visualisation.interactions]'
+export TURTLEBOT_MAP_FILE='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_apps/turtlebot_navigation/maps/willow-2010-02-18-0.10.yaml'
+export TURTLEBOT_NAME='turtlebot'
+export TURTLEBOT_RAPP_PACKAGE_BLACKLIST='[]'
+export TURTLEBOT_RAPP_PACKAGE_WHITELIST='[rocon_apps, turtlebot_rapps]'
+export TURTLEBOT_SERIAL_PORT='/dev/kobuki'
+export TURTLEBOT_SIMULATION='false'
+export TURTLEBOT_STACKS='hexagons'
+export TURTLEBOT_STAGE_MAP_FILE='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/maps/maze.yaml'
+export TURTLEBOT_STAGE_WORLD_FILE='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage/maps/stage/maze.world'
+export TURTLEBOT_STDR_MAP_FILE='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr/maps/sparse_obstacles.yaml'
+export TURTLEBOT_TYPE='turtlebot'
 
 # modified environment variables
-export PWD='/home/soumoroy/Downloads/crowd_surfer-master/build'
+export CMAKE_PREFIX_PATH="/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib:/opt/ros/noetic/lib:/usr/local/cuda-12.4/lib64'
+export PATH="/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin:$PATH"
+export PKG_CONFIG_PATH="/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build'
+export PYTHONPATH="/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src:$ROS_PACKAGE_PATH"

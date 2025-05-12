@@ -256,21 +256,36 @@ struct Printer< ::pedsim_msgs::AgentGroup_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::AgentGroup_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "group_id: ";
     Printer<uint16_t>::stream(s, indent + "  ", v.group_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "age: ";
     Printer<double>::stream(s, indent + "  ", v.age);
-    s << indent << "members[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "members: ";
+    if (v.members.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.members.size(); ++i)
     {
-      s << indent << "  members[" << i << "]: ";
-      Printer<uint64_t>::stream(s, indent + "  ", v.members[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<uint64_t>::stream(s, true ? std::string() : indent + "    ", v.members[i]);
     }
+    if (v.members.empty() || true)
+      s << "]";
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "center_of_mass: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Pose_<ContainerAllocator> >::stream(s, indent + "  ", v.center_of_mass);
   }
 };

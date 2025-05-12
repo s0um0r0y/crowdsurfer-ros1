@@ -244,14 +244,24 @@ struct Printer< ::turtlebot_actions::FindFiducialGoal_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_actions::FindFiducialGoal_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "camera_name: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.camera_name);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pattern_width: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.pattern_width);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pattern_height: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.pattern_height);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pattern_size: ";
     Printer<float>::stream(s, indent + "  ", v.pattern_size);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pattern_type: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.pattern_type);
   }

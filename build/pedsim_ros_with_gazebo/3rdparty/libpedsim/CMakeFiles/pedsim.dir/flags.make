@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wunused -std=c++0x -pipe -Os
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"pedsim\" -Dpedsim_EXPORTS
 
-CXX_INCLUDES = -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/3rdparty/libpedsim/include/pedsim 
+CXX_INCLUDES = -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/pedsim_ros_with_gazebo/3rdparty/libpedsim/include/pedsim 
 

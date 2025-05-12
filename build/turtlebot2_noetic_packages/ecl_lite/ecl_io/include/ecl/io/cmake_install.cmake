@@ -1,8 +1,8 @@
-# Install script for directory: /home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io
+# Install script for directory: /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/Downloads/crowd_surfer-master/install")
+  set(CMAKE_INSTALL_PREFIX "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,10 +39,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ecl/sockets" TYPE FILE FILES
-    "/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/macros.hpp"
-    "/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/poll.hpp"
-    "/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/socketpair.hpp"
-    "/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/sockets.hpp"
+    "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/macros.hpp"
+    "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/poll.hpp"
+    "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/socketpair.hpp"
+    "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_io/include/ecl/io/sockets.hpp"
     )
 endif()
 

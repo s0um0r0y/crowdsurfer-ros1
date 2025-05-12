@@ -294,14 +294,17 @@ struct Printer< ::turtlebot_actions::FindFiducialActionResult_<ContainerAllocato
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_actions::FindFiducialActionResult_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "status: ";
-    s << std::endl;
     Printer< ::actionlib_msgs::GoalStatus_<ContainerAllocator> >::stream(s, indent + "  ", v.status);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "result: ";
-    s << std::endl;
     Printer< ::turtlebot_actions::FindFiducialResult_<ContainerAllocator> >::stream(s, indent + "  ", v.result);
   }
 };

@@ -280,21 +280,33 @@ struct Printer< ::turtlebot_msgs::PanoramaImg_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_msgs::PanoramaImg_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pano_id: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.pano_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "latitude: ";
     Printer<double>::stream(s, indent + "  ", v.latitude);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "longitude: ";
     Printer<double>::stream(s, indent + "  ", v.longitude);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "heading: ";
     Printer<double>::stream(s, indent + "  ", v.heading);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "geo_tag: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.geo_tag);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "image: ";
-    s << std::endl;
     Printer< ::sensor_msgs::Image_<ContainerAllocator> >::stream(s, indent + "  ", v.image);
   }
 };

@@ -210,6 +210,8 @@ struct Printer< ::turtlebot_msgs::TakePanoramaResponse_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::turtlebot_msgs::TakePanoramaResponse_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "status: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.status);
   }

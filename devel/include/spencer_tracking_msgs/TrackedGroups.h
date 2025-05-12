@@ -258,17 +258,25 @@ struct Printer< ::spencer_tracking_msgs::TrackedGroups_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::TrackedGroups_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "groups[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "groups: ";
+    if (v.groups.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.groups.size(); ++i)
     {
-      s << indent << "  groups[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_tracking_msgs::TrackedGroup_<ContainerAllocator> >::stream(s, indent + "    ", v.groups[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_tracking_msgs::TrackedGroup_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.groups[i]);
     }
+    if (v.groups.empty() || false)
+      s << "]";
   }
 };
 

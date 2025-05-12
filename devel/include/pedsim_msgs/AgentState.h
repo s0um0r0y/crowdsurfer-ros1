@@ -303,8 +303,8 @@ struct Definition< ::pedsim_msgs::AgentState_<ContainerAllocator> >
 "================================================================================\n"
 "MSG: geometry_msgs/Twist\n"
 "# This expresses velocity in free space broken into its linear and angular parts.\n"
-"Vector3  linear\n"
-"Vector3  angular\n"
+"Vector3 linear\n"
+"Vector3 angular\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Vector3\n"
@@ -377,23 +377,33 @@ struct Printer< ::pedsim_msgs::AgentState_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::AgentState_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "type: ";
     Printer<uint16_t>::stream(s, indent + "  ", v.type);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "social_state: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.social_state);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pose: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Pose_<ContainerAllocator> >::stream(s, indent + "  ", v.pose);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "twist: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Twist_<ContainerAllocator> >::stream(s, indent + "  ", v.twist);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "forces: ";
-    s << std::endl;
     Printer< ::pedsim_msgs::AgentForce_<ContainerAllocator> >::stream(s, indent + "  ", v.forces);
   }
 };

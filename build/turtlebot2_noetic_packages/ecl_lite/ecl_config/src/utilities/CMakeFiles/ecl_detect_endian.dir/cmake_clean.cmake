@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_detect_endian"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_detect_endian.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_detect_endian"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_detect_endian.pdb"
   "CMakeFiles/ecl_detect_endian.dir/detect_endian.cpp.o"
 )
 

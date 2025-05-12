@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "rospy;roscpp;nodelet;pluginlib;tf;angles;geometry_msgs;sensor_msgs;nav_msgs;std_msgs;diagnostic_updater;diagnostic_msgs;kobuki_msgs;kobuki_driver;kobuki_keyop;kobuki_safety_controller;ecl_exceptions;ecl_sigslots;ecl_streams;ecl_threads".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lkobuki_ros;-lkobuki_nodelet".split(';') if "-lkobuki_ros;-lkobuki_nodelet" != "" else []
 PROJECT_NAME = "kobuki_node"
-PROJECT_SPACE_DIR = "/home/soumoroy/Downloads/crowd_surfer-master/install"
+PROJECT_SPACE_DIR = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install"
 PROJECT_VERSION = "0.7.6"

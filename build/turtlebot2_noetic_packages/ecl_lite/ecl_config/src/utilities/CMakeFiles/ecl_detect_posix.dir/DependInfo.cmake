@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/src/utilities/detect_posix.cpp" "/home/soumoroy/Downloads/crowd_surfer-master/build/turtlebot2_noetic_packages/ecl_lite/ecl_config/src/utilities/CMakeFiles/ecl_detect_posix.dir/detect_posix.cpp.o"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/src/utilities/detect_posix.cpp" "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/turtlebot2_noetic_packages/ecl_lite/ecl_config/src/utilities/CMakeFiles/ecl_detect_posix.dir/detect_posix.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/include"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include"
   )
 
 # Targets to which this target links.

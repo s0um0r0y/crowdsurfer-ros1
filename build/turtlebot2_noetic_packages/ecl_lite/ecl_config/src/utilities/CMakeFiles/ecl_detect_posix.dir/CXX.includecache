@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/src/utilities/detect_posix.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/ecl_lite/ecl_config/src/utilities/detect_posix.cpp
 iostream
 -
 unistd.h

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/pedsim_sensors/pedsim_people_sensor"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/pedsim_sensors/pedsim_people_sensor.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/pedsim_sensors/pedsim_people_sensor"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/pedsim_sensors/pedsim_people_sensor.pdb"
   "CMakeFiles/pedsim_people_sensor.dir/src/pedsim_sensors/people_point_cloud.cpp.o"
 )
 

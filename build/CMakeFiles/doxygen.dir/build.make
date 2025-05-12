@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/soumoroy/Downloads/crowd_surfer-master/src
+CMAKE_SOURCE_DIR = /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/soumoroy/Downloads/crowd_surfer-master/build
+CMAKE_BINARY_DIR = /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/soumoroy/Downloads/crowd_surfer-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumoroy/Downloads/crowd_surfer-master/src /home/soumoroy/Downloads/crowd_surfer-master/src /home/soumoroy/Downloads/crowd_surfer-master/build /home/soumoroy/Downloads/crowd_surfer-master/build /home/soumoroy/Downloads/crowd_surfer-master/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

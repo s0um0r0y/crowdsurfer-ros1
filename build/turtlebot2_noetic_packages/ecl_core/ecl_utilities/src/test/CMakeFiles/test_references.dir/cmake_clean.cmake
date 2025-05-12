@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/test_references"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_utilities/test_references.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/test_references"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_utilities/test_references.pdb"
   "CMakeFiles/test_references.dir/references.cpp.o"
 )
 

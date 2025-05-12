@@ -261,15 +261,15 @@ double decel_factor;
 
 
 
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double speed_lim_v;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double speed_lim_w;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double accel_lim_v;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double accel_lim_w;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double decel_factor;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -297,16 +297,16 @@ double decel_factor;
       {
         ROS_ERROR("paramsConfig::__fromMessage__ called with an unexpected parameter.");
         ROS_ERROR("Booleans:");
-        for (unsigned int i = 0; i < msg.bools.size(); i++)
+        for (size_t i = 0; i < msg.bools.size(); i++)
           ROS_ERROR("  %s", msg.bools[i].name.c_str());
         ROS_ERROR("Integers:");
-        for (unsigned int i = 0; i < msg.ints.size(); i++)
+        for (size_t i = 0; i < msg.ints.size(); i++)
           ROS_ERROR("  %s", msg.ints[i].name.c_str());
         ROS_ERROR("Doubles:");
-        for (unsigned int i = 0; i < msg.doubles.size(); i++)
+        for (size_t i = 0; i < msg.doubles.size(); i++)
           ROS_ERROR("  %s", msg.doubles[i].name.c_str());
         ROS_ERROR("Strings:");
-        for (unsigned int i = 0; i < msg.strs.size(); i++)
+        for (size_t i = 0; i < msg.strs.size(); i++)
           ROS_ERROR("  %s", msg.strs[i].name.c_str());
         // @todo Check that there are no duplicates. Make this error more
         // explicit.
@@ -409,59 +409,59 @@ double decel_factor;
     paramsConfigStatics()
     {
 paramsConfig::GroupDescription<paramsConfig::DEFAULT, paramsConfig> Default("Default", "", 0, 0, true, &paramsConfig::groups);
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.speed_lim_v = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.speed_lim_v = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.speed_lim_v = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("speed_lim_v", "double", 0, "Maximum linear velocity", "", &paramsConfig::speed_lim_v)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("speed_lim_v", "double", 0, "Maximum linear velocity", "", &paramsConfig::speed_lim_v)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.speed_lim_w = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.speed_lim_w = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.speed_lim_w = 5.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("speed_lim_w", "double", 0, "Maximum angular velocity", "", &paramsConfig::speed_lim_w)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("speed_lim_w", "double", 0, "Maximum angular velocity", "", &paramsConfig::speed_lim_w)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.accel_lim_v = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.accel_lim_v = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.accel_lim_v = 0.5;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("accel_lim_v", "double", 0, "Maximum linear acceleration", "", &paramsConfig::accel_lim_v)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("accel_lim_v", "double", 0, "Maximum linear acceleration", "", &paramsConfig::accel_lim_v)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.accel_lim_w = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.accel_lim_w = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.accel_lim_w = 2.5;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("accel_lim_w", "double", 0, "Maximum angular acceleration", "", &paramsConfig::accel_lim_w)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("accel_lim_w", "double", 0, "Maximum angular acceleration", "", &paramsConfig::accel_lim_w)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.decel_factor = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.decel_factor = 10.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.decel_factor = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("decel_factor", "double", 0, "Deceleration to acceleration ratio", "", &paramsConfig::decel_factor)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(paramsConfig::AbstractParamDescriptionConstPtr(new paramsConfig::ParamDescription<double>("decel_factor", "double", 0, "Deceleration to acceleration ratio", "", &paramsConfig::decel_factor)));
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(paramsConfig::AbstractGroupDescriptionConstPtr(new paramsConfig::GroupDescription<paramsConfig::DEFAULT, paramsConfig>(Default)));
 //#line 369 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 

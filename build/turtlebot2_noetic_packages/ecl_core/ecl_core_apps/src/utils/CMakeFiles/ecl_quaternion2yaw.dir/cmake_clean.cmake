@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_quaternion2yaw"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_quaternion2yaw.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_quaternion2yaw"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_quaternion2yaw.pdb"
   "CMakeFiles/ecl_quaternion2yaw.dir/quaternion2yaw.cpp.o"
 )
 

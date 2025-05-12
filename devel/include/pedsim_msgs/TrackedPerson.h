@@ -248,8 +248,8 @@ struct Definition< ::pedsim_msgs::TrackedPerson_<ContainerAllocator> >
 "================================================================================\n"
 "MSG: geometry_msgs/Twist\n"
 "# This expresses velocity in free space broken into its linear and angular parts.\n"
-"Vector3  linear\n"
-"Vector3  angular\n"
+"Vector3 linear\n"
+"Vector3 angular\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Vector3\n"
@@ -306,21 +306,33 @@ struct Printer< ::pedsim_msgs::TrackedPerson_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::TrackedPerson_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "track_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.track_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "is_occluded: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.is_occluded);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "is_matched: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.is_matched);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "detection_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.detection_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "age: ";
     Printer<ros::Duration>::stream(s, indent + "  ", v.age);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pose: ";
-    s << std::endl;
     Printer< ::geometry_msgs::PoseWithCovariance_<ContainerAllocator> >::stream(s, indent + "  ", v.pose);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "twist: ";
-    s << std::endl;
     Printer< ::geometry_msgs::TwistWithCovariance_<ContainerAllocator> >::stream(s, indent + "  ", v.twist);
   }
 };

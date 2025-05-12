@@ -203,11 +203,13 @@ struct Printer< ::pedsim_msgs::LineObstacle_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::LineObstacle_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "start: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.start);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "end: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.end);
   }
 };

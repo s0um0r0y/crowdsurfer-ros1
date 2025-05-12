@@ -379,16 +379,29 @@ struct Printer< ::spencer_social_relation_msgs::SocialActivity_<ContainerAllocat
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_social_relation_msgs::SocialActivity_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "type: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.type);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "confidence: ";
     Printer<float>::stream(s, indent + "  ", v.confidence);
-    s << indent << "track_ids[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "track_ids: ";
+    if (v.track_ids.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.track_ids.size(); ++i)
     {
-      s << indent << "  track_ids[" << i << "]: ";
-      Printer<uint64_t>::stream(s, indent + "  ", v.track_ids[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<uint64_t>::stream(s, true ? std::string() : indent + "    ", v.track_ids[i]);
     }
+    if (v.track_ids.empty() || true)
+      s << "]";
   }
 };
 

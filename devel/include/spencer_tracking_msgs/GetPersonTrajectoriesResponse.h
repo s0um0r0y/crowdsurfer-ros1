@@ -226,8 +226,8 @@ struct Definition< ::spencer_tracking_msgs::GetPersonTrajectoriesResponse_<Conta
 "================================================================================\n"
 "MSG: geometry_msgs/Twist\n"
 "# This expresses velocity in free space broken into its linear and angular parts.\n"
-"Vector3  linear\n"
-"Vector3  angular\n"
+"Vector3 linear\n"
+"Vector3 angular\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Vector3\n"
@@ -278,14 +278,21 @@ struct Printer< ::spencer_tracking_msgs::GetPersonTrajectoriesResponse_<Containe
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::GetPersonTrajectoriesResponse_<ContainerAllocator>& v)
   {
-    s << indent << "trajectories[]" << std::endl;
+    if (false || !indent.empty())
+      s << std::endl;
+    s << indent << "trajectories: ";
+    if (v.trajectories.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.trajectories.size(); ++i)
     {
-      s << indent << "  trajectories[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::spencer_tracking_msgs::PersonTrajectory_<ContainerAllocator> >::stream(s, indent + "    ", v.trajectories[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::spencer_tracking_msgs::PersonTrajectory_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.trajectories[i]);
     }
+    if (v.trajectories.empty() || false)
+      s << "]";
   }
 };
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/include/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/include/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 cmath
 -
 cstring
@@ -68,7 +68,7 @@ kobuki_msgs/WheelDropEvent.h
 kobuki_msgs/SensorState.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/gazebo_ros_kobuki.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/gazebo_ros_kobuki.cpp
 cmath
 -
 cstring
@@ -80,7 +80,7 @@ sensor_msgs/JointState.h
 tf/LinearMath/Quaternion.h
 -
 kobuki_gazebo_plugins/gazebo_ros_kobuki.h
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 ignition/math/Vector3.hh
 -
 ignition/math/Quaternion.hh
@@ -88,13 +88,13 @@ ignition/math/Quaternion.hh
 gazebo/math/gzmath.hh
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_loads.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_loads.cpp
 kobuki_gazebo_plugins/gazebo_ros_kobuki.h
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_updates.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_updates.cpp
 kobuki_gazebo_plugins/gazebo_ros_kobuki.h
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 
 /opt/ros/noetic/include/gazebo_plugins/gazebo_ros_utils.h
 map

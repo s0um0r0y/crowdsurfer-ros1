@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_human_attribute_msgs/msg/CategoricalAttribute.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_human_attribute_msgs/msg/HumanAttributes.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_human_attribute_msgs/msg/ScalarAttribute.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_human_attribute_msgs/msg/CategoricalAttribute.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_human_attribute_msgs/msg/HumanAttributes.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_human_attribute_msgs/msg/ScalarAttribute.lisp"
   "CMakeFiles/spencer_human_attribute_msgs_generate_messages_lisp"
 )
 

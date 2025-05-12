@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_detect_sizes"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/bin/ecl_detect_sizes.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_detect_sizes"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/bin/ecl_detect_sizes.pdb"
   "CMakeFiles/ecl_detect_sizes.dir/detect_sizes.cpp.o"
 )
 

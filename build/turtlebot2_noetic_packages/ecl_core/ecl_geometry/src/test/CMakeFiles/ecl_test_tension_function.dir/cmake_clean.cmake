@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_tension_function"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_geometry/ecl_test_tension_function.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_tension_function"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_geometry/ecl_test_tension_function.pdb"
   "CMakeFiles/ecl_test_tension_function.dir/tension_function.cpp.o"
 )
 

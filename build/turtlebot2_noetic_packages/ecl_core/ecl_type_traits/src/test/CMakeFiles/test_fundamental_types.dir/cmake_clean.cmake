@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_type_traits/test_fundamental_types"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_type_traits/test_fundamental_types.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_type_traits/test_fundamental_types"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_type_traits/test_fundamental_types.pdb"
   "CMakeFiles/test_fundamental_types.dir/fundamental_types.cpp.o"
 )
 

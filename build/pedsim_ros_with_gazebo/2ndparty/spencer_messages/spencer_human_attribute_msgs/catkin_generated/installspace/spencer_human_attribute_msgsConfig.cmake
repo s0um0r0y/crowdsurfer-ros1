@@ -67,14 +67,14 @@ set(spencer_human_attribute_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(spencer_human_attribute_msgs_SOURCE_PREFIX /home/soumoroy/Downloads/crowd_surfer-master/src/pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs)
-  set(spencer_human_attribute_msgs_DEVEL_PREFIX /home/soumoroy/Downloads/crowd_surfer-master/devel)
+  set(spencer_human_attribute_msgs_SOURCE_PREFIX /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/pedsim_ros_with_gazebo/2ndparty/spencer_messages/spencer_human_attribute_msgs)
+  set(spencer_human_attribute_msgs_DEVEL_PREFIX /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel)
   set(spencer_human_attribute_msgs_INSTALL_PREFIX "")
   set(spencer_human_attribute_msgs_PREFIX ${spencer_human_attribute_msgs_DEVEL_PREFIX})
 else()
   set(spencer_human_attribute_msgs_SOURCE_PREFIX "")
   set(spencer_human_attribute_msgs_DEVEL_PREFIX "")
-  set(spencer_human_attribute_msgs_INSTALL_PREFIX /home/soumoroy/Downloads/crowd_surfer-master/install)
+  set(spencer_human_attribute_msgs_INSTALL_PREFIX /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install)
   set(spencer_human_attribute_msgs_PREFIX ${spencer_human_attribute_msgs_INSTALL_PREFIX})
 endif()
 
@@ -118,7 +118,7 @@ endif()
 
 set(libraries "")
 foreach(library ${libraries})
-  # keep build configuration keywords, target names and absolute libraries as-is
+  # keep build configuration keywords, generator expressions, target names, and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
     list(APPEND spencer_human_attribute_msgs_LIBRARIES ${library})
   elseif(${library} MATCHES "^-l")
@@ -146,6 +146,8 @@ foreach(library ${libraries})
       target_link_options("${interface_target_name}" INTERFACE "${library}")
     endif()
     list(APPEND spencer_human_attribute_msgs_LIBRARIES "${interface_target_name}")
+  elseif(${library} MATCHES "^\\$<")
+    list(APPEND spencer_human_attribute_msgs_LIBRARIES ${library})
   elseif(TARGET ${library})
     list(APPEND spencer_human_attribute_msgs_LIBRARIES ${library})
   elseif(IS_ABSOLUTE ${library})
@@ -154,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/soumoroy/Downloads/crowd_surfer-master/install/lib;/home/soumoroy/Downloads/crowd_surfer-master/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

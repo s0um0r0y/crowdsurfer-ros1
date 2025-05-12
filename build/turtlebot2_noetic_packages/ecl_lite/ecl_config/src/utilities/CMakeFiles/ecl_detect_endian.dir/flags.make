@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/soumoroy/Downloads/crowd_surfer-master/devel/include 
+CXX_INCLUDES = -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/include 
 

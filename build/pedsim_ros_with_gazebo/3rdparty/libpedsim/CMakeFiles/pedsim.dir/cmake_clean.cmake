@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libpedsim.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libpedsim.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libpedsim.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libpedsim.so"
   "CMakeFiles/pedsim.dir/src/ped_agent.cpp.o"
   "CMakeFiles/pedsim.dir/src/ped_angle.cpp.o"
   "CMakeFiles/pedsim.dir/src/ped_obstacle.cpp.o"

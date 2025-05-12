@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'additional_topic_subscriber.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'additional_topic_subscriber.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.8. It"
+#error "This file was generated using the moc from 5.9.7. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -47,7 +47,7 @@ QT_MOC_LITERAL(4, 67, 17) // "fixedFrameChanged"
 static const uint qt_meta_data_rviz___AdditionalTopicSubscriber[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -73,7 +73,7 @@ static const uint qt_meta_data_rviz___AdditionalTopicSubscriber[] = {
 void rviz::_AdditionalTopicSubscriber::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<_AdditionalTopicSubscriber *>(_o);
+        _AdditionalTopicSubscriber *_t = static_cast<_AdditionalTopicSubscriber *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->updateTopic(); break;
@@ -85,14 +85,10 @@ void rviz::_AdditionalTopicSubscriber::qt_static_metacall(QObject *_o, QMetaObje
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject rviz::_AdditionalTopicSubscriber::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_rviz___AdditionalTopicSubscriber.data,
-    qt_meta_data_rviz___AdditionalTopicSubscriber,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject rviz::_AdditionalTopicSubscriber::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_rviz___AdditionalTopicSubscriber.data,
+      qt_meta_data_rviz___AdditionalTopicSubscriber,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *rviz::_AdditionalTopicSubscriber::metaObject() const

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_streams.pdb"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/libecl_streams.so"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_streams.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/libecl_streams.so"
   "CMakeFiles/ecl_streams.dir/log_stream.cpp.o"
   "CMakeFiles/ecl_streams.dir/manipulators.cpp.o"
 )

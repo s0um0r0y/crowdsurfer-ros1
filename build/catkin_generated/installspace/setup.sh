@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/soumoroy/Downloads/crowd_surfer-master/install}
+: ${_CATKIN_SETUP_DIR:=/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

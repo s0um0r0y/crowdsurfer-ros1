@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_math/ecl_test_norms"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/lib/ecl_math/ecl_test_norms.pdb"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_math/ecl_test_norms"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/lib/ecl_math/ecl_test_norms.pdb"
   "CMakeFiles/ecl_test_norms.dir/norms.cpp.o"
 )
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/turtlebot_msgs/msg/PanoramaImg.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/turtlebot_msgs/srv/SetFollowState.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/turtlebot_msgs/srv/TakePanorama.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/turtlebot_msgs/msg/PanoramaImg.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/turtlebot_msgs/srv/SetFollowState.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/turtlebot_msgs/srv/TakePanorama.lisp"
   "CMakeFiles/turtlebot_msgs_generate_messages_lisp"
 )
 

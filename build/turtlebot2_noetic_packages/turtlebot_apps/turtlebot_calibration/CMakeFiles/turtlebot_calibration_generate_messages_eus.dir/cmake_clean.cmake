@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/turtlebot_calibration/manifest.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/turtlebot_calibration/msg/ScanAngle.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/turtlebot_calibration/manifest.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/turtlebot_calibration/msg/ScanAngle.l"
   "CMakeFiles/turtlebot_calibration_generate_messages_eus"
 )
 

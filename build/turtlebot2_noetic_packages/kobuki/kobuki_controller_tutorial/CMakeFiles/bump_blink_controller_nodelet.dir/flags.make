@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"kobuki_controller_tutorial\" -Dbump_blink_controller_nodelet_EXPORTS
 
-CXX_INCLUDES = -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/kobuki/kobuki_controller_tutorial/include -I/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/yocs_controllers/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/kobuki/kobuki_controller_tutorial/include -I/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/yocs_controllers/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

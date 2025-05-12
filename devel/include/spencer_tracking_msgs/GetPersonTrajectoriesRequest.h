@@ -192,12 +192,23 @@ struct Printer< ::spencer_tracking_msgs::GetPersonTrajectoriesRequest_<Container
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::GetPersonTrajectoriesRequest_<ContainerAllocator>& v)
   {
-    s << indent << "requested_ids[]" << std::endl;
+    if (false || !indent.empty())
+      s << std::endl;
+    s << indent << "requested_ids: ";
+    if (v.requested_ids.empty() || true)
+      s << "[";
     for (size_t i = 0; i < v.requested_ids.size(); ++i)
     {
-      s << indent << "  requested_ids[" << i << "]: ";
-      Printer<uint64_t>::stream(s, indent + "  ", v.requested_ids[i]);
+      if (true && i > 0)
+        s << ", ";
+      else if (!true)
+        s << std::endl << indent << "  -";
+      Printer<uint64_t>::stream(s, true ? std::string() : indent + "    ", v.requested_ids[i]);
     }
+    if (v.requested_ids.empty() || true)
+      s << "]";
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "max_age: ";
     Printer<ros::Duration>::stream(s, indent + "  ", v.max_age);
   }

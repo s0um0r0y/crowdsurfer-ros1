@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/spencer_social_relation_msgs/manifest.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialActivities.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialActivity.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialRelation.l"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialRelations.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/spencer_social_relation_msgs/manifest.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialActivities.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialActivity.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialRelation.l"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/roseus/ros/spencer_social_relation_msgs/msg/SocialRelations.l"
   "CMakeFiles/spencer_social_relation_msgs_generate_messages_eus"
 )
 

@@ -329,13 +329,20 @@ struct Printer< ::spencer_tracking_msgs::DetectedPerson_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::spencer_tracking_msgs::DetectedPerson_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "detection_id: ";
     Printer<uint64_t>::stream(s, indent + "  ", v.detection_id);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "confidence: ";
     Printer<double>::stream(s, indent + "  ", v.confidence);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "pose: ";
-    s << std::endl;
     Printer< ::geometry_msgs::PoseWithCovariance_<ContainerAllocator> >::stream(s, indent + "  ", v.pose);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "modality: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.modality);
   }

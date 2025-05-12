@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/soumoroy/Downloads/crowd_surfer-master/src
-# Build directory: /home/soumoroy/Downloads/crowd_surfer-master/build
+# Source directory: /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src
+# Build directory: /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -57,6 +57,7 @@ subdirs("turtlebot2_noetic_packages/turtlebot_interactions/turtlebot_rviz_launch
 subdirs("turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_simulator")
 subdirs("turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stage")
 subdirs("turtlebot2_noetic_packages/turtlebot_simulator/turtlebot_stdr")
+subdirs("CrowdSurfer")
 subdirs("turtlebot2_noetic_packages/kobuki/kobuki_keyop")
 subdirs("pedsim_ros_with_gazebo/3rdparty/libpedsim")
 subdirs("pedsim_ros_with_gazebo/ros_maps_to_pedsim")
@@ -66,7 +67,6 @@ subdirs("turtlebot2_noetic_packages/kobuki/kobuki_auto_docking")
 subdirs("turtlebot2_noetic_packages/depthimage_to_laserscan")
 subdirs("turtlebot2_noetic_packages/kobuki/kobuki_bumper2pc")
 subdirs("pedsim_ros_with_gazebo/pedsim_msgs")
-subdirs("local-dynamic-navigation-pkg")
 subdirs("pedsim_ros_with_gazebo/pedsim_srvs")
 subdirs("pedsim_ros_with_gazebo/pedsim_utils")
 subdirs("pedsim_ros_with_gazebo/pedsim_visualizer")

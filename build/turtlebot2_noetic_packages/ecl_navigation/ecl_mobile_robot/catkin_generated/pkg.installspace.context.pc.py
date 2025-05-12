@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "ecl_build;ecl_errors;ecl_geometry;ecl_math;ecl_formatters;ecl_linear_algebra".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lecl_mobile_robot".split(';') if "-lecl_mobile_robot" != "" else []
 PROJECT_NAME = "ecl_mobile_robot"
-PROJECT_SPACE_DIR = "/home/soumoroy/Downloads/crowd_surfer-master/install"
+PROJECT_SPACE_DIR = "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install"
 PROJECT_VERSION = "0.60.3"

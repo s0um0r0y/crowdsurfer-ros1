@@ -1,12 +1,18 @@
 # Implemention of generative AI with sampling optimizer for path planning for a mobile robot
 
-- reimplemented with RVIZ visualiztion in closed loop with a rosbag
-- implemented generative AI for path planning using VQ-VAE and PixelCNN
+- reimplemented with RVIZ visualiztion in closed loop with a rosbag and closed loop in pedsim gazebo simulation
+- implemented generative AI for path planning for mobile robot in a crowded environment using VQ-VAE and PixelCNN
 
 ![teaser](./sampling_from_vqvae.png)
 ![teaser](./PixelCNN.png)
 
-# RVIZ window
+## Built With
+- Pedsim Gazebo Simulation
+- ROS 1 noetic
+- CUDA 11.8
+- Pytorch
+
+## RVIZ window
 
 - blue colour line is VQ-VAE + PixelCNN generated trajectory
 - green colour line is PRIEST optimized trajectory
@@ -14,13 +20,13 @@
   
 ![comparison_vqvae_pixelcnn_PRIEST_optimzer](https://github.com/user-attachments/assets/8896391a-1b49-4353-86b8-a23a5c3fdb22)
 
-# Pedsim Gazebo simulator
+## Pedsim Gazebo simulator
 
 - Validated results in a crowded environment simulation to avoid humans
 
 ![teaser](./gazebo_simulation.png)
 
-# How to run ?
+## How to run ?
 ```
   # this command is for running open loop using a rosbag
   conda env create -f environment.yml
@@ -30,7 +36,18 @@
   ./run_closed_loop_simulation.sh
 ```
 
-# Citation
+## Author
+- [Soumo Roy](https://github.com/s0um0r0y) - soumoroy09@gmail.com
+- Aadith Warrier (for guidance)
+
+## Future Work
+- Docker setup for running with ease
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Citation
 **Bibtex** -
 ```
 @misc{kumar2025crowdsurfersamplingoptimizationaugmented,

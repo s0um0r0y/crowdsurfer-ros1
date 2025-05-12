@@ -5,7 +5,7 @@
 # or fall back to the destination set at configure time
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/soumoroy/Downloads/crowd_surfer-master/install
+    set _CATKIN_SETUP_DIR /home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/install
 end
 
 set CATKIN_SETUP_UTIL_ARGS "--extend --local"

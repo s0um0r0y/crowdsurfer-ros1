@@ -259,26 +259,33 @@ struct Printer< ::pedsim_msgs::AgentForce_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pedsim_msgs::AgentForce_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "desired_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.desired_force);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "obstacle_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.obstacle_force);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "social_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.social_force);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "group_coherence_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.group_coherence_force);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "group_gaze_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.group_gaze_force);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "group_repulsion_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.group_repulsion_force);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "random_force: ";
-    s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.random_force);
   }
 };

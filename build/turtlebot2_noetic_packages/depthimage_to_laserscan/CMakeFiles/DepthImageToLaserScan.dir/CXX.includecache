@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/depthimage_to_laserscan/include/depthimage_to_laserscan/DepthImageToLaserScan.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/depthimage_to_laserscan/include/depthimage_to_laserscan/DepthImageToLaserScan.h
 sensor_msgs/Image.h
 -
 sensor_msgs/LaserScan.h
@@ -24,13 +24,13 @@ limits.h
 math.h
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/depthimage_to_laserscan/include/depthimage_to_laserscan/depth_traits.h
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/depthimage_to_laserscan/include/depthimage_to_laserscan/depth_traits.h
 algorithm
 -
 limits
 -
 
-/home/soumoroy/Downloads/crowd_surfer-master/src/turtlebot2_noetic_packages/depthimage_to_laserscan/src/DepthImageToLaserScan.cpp
+/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src/turtlebot2_noetic_packages/depthimage_to_laserscan/src/DepthImageToLaserScan.cpp
 depthimage_to_laserscan/DepthImageToLaserScan.h
 -
 

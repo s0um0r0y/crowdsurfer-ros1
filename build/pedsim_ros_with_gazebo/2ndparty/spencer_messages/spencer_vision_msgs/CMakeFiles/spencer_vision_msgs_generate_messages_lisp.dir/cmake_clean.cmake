@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonImage.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonImages.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonROI.lisp"
-  "/home/soumoroy/Downloads/crowd_surfer-master/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonROIs.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonImage.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonImages.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonROI.lisp"
+  "/home/soumoroy/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/devel/share/common-lisp/ros/spencer_vision_msgs/msg/PersonROIs.lisp"
   "CMakeFiles/spencer_vision_msgs_generate_messages_lisp"
 )
 
