@@ -20,12 +20,14 @@ flowchart made by [Soumo Roy](https://github.com/s0um0r0y)
 - blue colour line is VQ-VAE + PixelCNN generated trajectory
 - green colour line is PRIEST optimized trajectory
 - green colour marker is the dynamic obstacles
+- [Simulation Demo](https://drive.google.com/file/d/1nSyOIk4JmVDSuj6wRM4vHAArfcK2Fj91/view?usp=sharing)
   
 ![comparison_vqvae_pixelcnn_PRIEST_optimzer](https://github.com/user-attachments/assets/8896391a-1b49-4353-86b8-a23a5c3fdb22)
 
 ## Pedsim Gazebo simulator
 
-- Validated results in a crowded environment simulation to avoid humans
+- Validated results in a crowded environment simulation to avoid humans (dynamic obstacles)
+- [Simulation Demo](https://drive.google.com/file/d/19sQzzvD0daZ0SYvZoFq8Gw9cFL1mPFsC/view?usp=sharing)
 
 ![teaser](./gazebo_simulation.png)
 
@@ -66,4 +68,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Remark 
 
-This work is a remimplemtation of [Crowdsurfer paper](https://github.com/Smart-Wheelchair-RRC/CrowdSurfer) which was published at IEEE ICRA 2025 (A* star conference for robotics) at IIIT hyderabad under the guidance of [Naman Kumar](https://github.com/namanxkumar) and [Dr. Madhava Krishna](https://robotics.iiit.ac.in/faculty_mkrishna/.)
+This work is a re-implemtation of [Crowdsurfer paper](https://github.com/Smart-Wheelchair-RRC/CrowdSurfer) which was published at IEEE ICRA 2025 (A* star conference for robotics) at IIIT hyderabad under the guidance of [Naman Kumar](https://github.com/namanxkumar) and [Dr. Madhava Krishna](https://robotics.iiit.ac.in/faculty_mkrishna/.)
