@@ -66,4 +66,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Remark 
 
-This work is a remimplemtation of [Crowdsurfer paper](https://github.com/Smart-Wheelchair-RRC/CrowdSurfer) which was published at IEEE ICRA 2025 (A* star conference for robotics) at IIIT hyderabad under the guidance of [Naman Kumar](https://github.com/namanxkumar) and [Dr. Madhava Krishna](https://robotics.iiit.ac.in/faculty_mkrishna/.)
+This work is a re-implemtation of [Crowdsurfer paper](https://github.com/Smart-Wheelchair-RRC/CrowdSurfer) which was published at IEEE ICRA 2025 (A* star conference for robotics) at IIIT hyderabad under the guidance of [Naman Kumar](https://github.com/namanxkumar) and [Dr. Madhava Krishna](https://robotics.iiit.ac.in/faculty_mkrishna/.)
