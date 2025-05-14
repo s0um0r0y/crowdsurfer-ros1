@@ -47,6 +47,7 @@ flowchart made by [Soumo Roy](https://github.com/s0um0r0y)
 
 ## Future Work
 - Docker setup for running with ease
+- Devconatiner setup for running with VS Code extension 
 
 ## License
 
