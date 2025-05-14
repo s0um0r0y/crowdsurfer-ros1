@@ -1,6 +1,6 @@
 {
     "name": "CrowdSurfer Development on x86 without GPU",
-    "image": "ghcr.io/smart-wheelchair-rrc/wheelchair_base:latest", 
+    "image": "ghcr.io/smart-wheelchair-rrc/crowdsurfer_base:latest", 
     "privileged": true,
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src,type=bind",
     "workspaceFolder": "/home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src",

@@ -1,6 +1,6 @@
 
 # needs editing 
-FROM ghcr.io/smart-wheelchair-rrc/wheelchair2_base:v1.0
+FROM ghcr.io/smart-wheelchair-rrc/crowdsurfer_base:v1.0
 # Add the following labels
 LABEL org.opencontainers.image.description="Crowdsurfer simulation" 
 LABEL org.opencontainers.image.title="Wheelchair2Navigation"
