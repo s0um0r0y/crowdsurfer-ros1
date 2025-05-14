@@ -1,6 +1,6 @@
 {
     "name": "CrowdSurfer Development on x86 without GPU",
-    "image": "crowdsurfer",
+    "build": { "dockerfile": "Dockerfile"},
     "privileged": true,
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src,type=bind",
     "workspaceFolder": "/home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1/src",
@@ -61,5 +61,5 @@
         "--net=host",
         "--ipc=host"
     ],
-    "postStartCommand": "sudo chown -R wheelchair2:wheelchair2 /home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1 /run" 
+    "postStartCommand": "cd /home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1" 
 }
