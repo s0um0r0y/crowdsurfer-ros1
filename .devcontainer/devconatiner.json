@@ -60,6 +60,5 @@
         "--volume=/dev:/dev",
         "--net=host",
         "--ipc=host"
-    ],
-    "postStartCommand": "cd /home/crowdsurfer_new_implementation_ws/crowdsurfer-ros1" 
+    ]
 }
