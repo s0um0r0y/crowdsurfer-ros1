@@ -45,10 +45,6 @@ flowchart made by [Soumo Roy](https://github.com/s0um0r0y)
 - [Soumo Roy](https://github.com/s0um0r0y) - soumoroy09@gmail.com
 - [Aadith Warrier](https://github.com/aadith-warrier) (for guidance)
 
-## Future Work
-- Docker setup for running with ease
-- Devconatiner setup for running with VS Code extension 
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
